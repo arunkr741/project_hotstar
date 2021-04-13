@@ -5,13 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+ <style> 
+    body{
+        font-family: 'Source Sans Pro', sans-serif;
+        background-color: #0c111b;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        padding: 5vh;
+        width: auto;
+    }
+    #results_hot{
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+    }
+    #movie_div{
+        border: 1px solid chocolate;
+        padding: 3vh;
+    }
+    #posterimgage{
+        width: 120px;
+        text-align: center;
+    }
+    .fas{
+        color: red;
+    }
+   
+</style>
 </head>
 <body>
-    
+    <i class='fa fa-angle-left' style='font-size:48px;color:red'></i>
+    <div id="container_hot"> 
+        <h1> Latest & Trending </h1>
+
+        <div> 
+            <h1> fetching data </h1><i class="fa fa-car"></i>
+
+            <div id="results_hot"> 
+                <div> 
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+<script> 
+        let key =  "b4ca5947";
+
+        let data = fetch(`http://www.omdbapi.com/?apikey=${key}&s=max`)
+        .then((res)=>res.json())
+        .then(data=>display_hotData(data));
+
+    function display_hotData(data){
+        var searching = data.Search;
+        searching.forEach(indivData => {
+                var {Title,Year,imdbID,Type,Poster} = indivData
+                // console.log(Title);
+                let results_hot  = document.getElementById("results_hot");
+                let movie_div = document.createElement("div");
+                movie_div.setAttribute("id","movie_div")
+
+                let movieTitlesP = document.createElement("p");
+                let posterimg = document.createElement("img");
+                posterimg.setAttribute("id","posterimgage")
+                posterimg.setAttribute("src",Poster)
+                movieTitlesP.innerHTML = `Title: ${Title} Year: ${Year} imdbID: ${imdbID} Type: ${Type} `
+
+                movie_div.append(movieTitlesP,posterimg)
+                results_hot.append(movie_div)
+        }); 
+    }
+
+    
+</script>
 
 
+<!-- d.forEach( (indivData)=> {
+}); -->
 
 <!-- http://www.omdbapi.com/?apikey=b4ca5947&s=%22batman%22 -->
 
