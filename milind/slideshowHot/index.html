@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,130 +9,164 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 
- <style> 
-    body{
-        font-family: 'Source Sans Pro', sans-serif;
-        background-color: #0c111b;
-        color: #ffffff;
-        border: 1px solid #ffffff;
-        padding: 5vh;
-        width: auto;
-    }
-    #results_hot{
-        display: flex;
-        flex: 1;
-        justify-content: space-between;
-    }
-    #movie_div{
-        border: 1px solid chocolate;
-        padding: 2vh;
-    }
-    #posterimgage{
-        width: 120px;
-        height: 320px;
-        text-align: center;
-        display: block;
 
-    }
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: #0c111b;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            padding: 2vh;
+            width: auto;
+        }
 
-    #posterimgage:hover{
-        transition: .5s ease;
-  background-color: #008CBA;
-    }
-   
-    .fas{
-        color: red;
-    }
-    i{
-        padding: 5vh 2vh;
-        margin: 70px 10px;
-    }
-    .righticonSlider{
-        position: absolute;
-        margin-left: 170vh;
-        color: red;
-        font-weight: bold;
-        font-size: 148px;
-    }
-    .lefticonSlider{
-        color: red;
-        font-weight: bold;
-        font-size: 148px;
-    }
+        #results_hot {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+        }
+
+        #movie_div {
+            border: 1px solid chocolate;
+            padding: 2vh;
+        }
+
+        #posterimgage {
+            width: 100px;
+            height: 220px;
+            text-align: center;
+            /* display: block; */
+            margin: 20px 5px;
 
 
+        }
 
-  
-</style>
+        #posterimgage:hover {
+            transition: .5s ease;
+            background-color: #008CBA;
+            transform: scale(1.2);
+            filter: blur(2px);
+
+        }
+
+        .fas {
+            color: red;
+        }
+
+        i {
+            padding: 1vh 2vh;
+            margin: 70px 5px;
+        }
+
+        .righticonSlider {
+            position: absolute;
+            margin-left: 190vh;
+            color: red;
+            font-weight: bold;
+            font-size: 148px;
+        }
+
+        .lefticonSlider {
+            color: red;
+            font-weight: bold;
+            font-size: 148px;
+        }
+
+
+        #movie_div {
+            overflow: hidden;
+        }
+
+        #posterTitle {
+            font-size: 21px;
+            z-index: 1;
+        }
+
+
+        #posterTitle:before {
+
+            content: "";
+            display: none;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(52, 73, 94, 0.75);
+
+        }
+    </style>
 </head>
+
 <body>
-    <div id="container_hot"> 
+    <div id="container_hot">
         <h1> Latest & Trending </h1>
-        
-        <div> 
+
+        <div>
             <h1> fetching data </h1>
-            
-            <div id="results_hot"> 
-                 <i onclick="hotSlidersLeft()" class='fa fa-angle-left  lefticonSlider'></i>
-                 <i onclick="hotSlidersRight()" class='fa fa-angle-right righticonSlider'></i>
+
+            <div id="results_hot">
+                <i onclick="hotSlidersLeft()" class='fa fa-angle-left  lefticonSlider'></i>
+                <i onclick="hotSlidersRight()" class='fa fa-angle-right righticonSlider'></i>
+
             </div>
 
         </div>
     </div>
 </body>
+
 </html>
-<script> 
-        let key =  "b4ca5947";
-        var slideIndexes = 1;
+<script>
+    let key = "b4ca5947";
+    var slideIndexes = 1;
 
-        let data = fetch(`http://www.omdbapi.com/?apikey=${key}&s=max`)
-        .then((res)=>res.json())
-        .then(data=>display_hotData(data));
+    let data = fetch(`http://www.omdbapi.com/?apikey=${key}&s=batman`)
+        .then((res) => res.json())
+        .then(data => display_hotData(data));
 
 
-    function display_hotData(data){
+    function display_hotData(data) {
         var searching = data.Search;
         searching.forEach(indivData => {
-                var {Title,Poster} = indivData
-                // console.log(Title);
-                let results_hot  = document.getElementById("results_hot");
-                let movie_div = document.createElement("div");
-                movie_div.setAttribute("id","movie_div")
+            var { Title, Poster } = indivData
+            // console.log(Title);
+            let results_hot = document.getElementById("results_hot");
+            let movie_div = document.createElement("div");
+            movie_div.setAttribute("id", "movie_div")
 
-                let posterimg = document.createElement("img");
-                posterimg.setAttribute("id","posterimgage")
-                posterimg.setAttribute("src",Poster)
+            let posterimg = document.createElement("img");
+            posterimg.setAttribute("src", Poster)
+            posterimg.setAttribute("id", "posterimgage")
 
-                posterimg.addEventListener("onchange",function(){
-                    hoverImage(`${Poster}`)
-                })
+            posterimg.addEventListener("click", function () {
+                hoverImage(`${Poster} , ${Title}`)
+            })
 
 
-                movie_div.append(posterimg)
-                results_hot.append(movie_div)
-        }); 
+            movie_div.append(posterimg)
+            results_hot.append(movie_div)
+        });
     }
 
 
-    function hoverImage(p){
-    
-  
+    function hoverImage(Poster, Title) {
+        // console.log(Poster, Title);
+        
+        var results_hots = document.getElementById("results_hot");
+
+        var div = document.createElement("div");
+        var posterTitle = document.createElement("p");
+        posterTitle.innerText = `${Title}`
+        posterTitle.setAttribute("id", "posterTitle")
+        div.append(posterTitle)
+        results_hot.append(div)
 
     }
-
-
-
-
-
 
 
 
 </script>
 
-
-<!-- d.forEach( (indivData)=> {
-}); -->
 
 <!-- http://www.omdbapi.com/?apikey=b4ca5947&s=%22batman%22 -->
 
