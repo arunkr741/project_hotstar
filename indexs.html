@@ -25,21 +25,12 @@
     }
     #movie_div{
         border: 1px solid chocolate;
-        padding: 2vh;
+        padding: 3vh;
     }
     #posterimgage{
         width: 120px;
-        height: 320px;
         text-align: center;
-        display: block;
-
     }
-
-    #posterimgage:hover{
-        transition: .5s ease;
-  background-color: #008CBA;
-    }
-   
     .fas{
         color: red;
     }
@@ -59,10 +50,7 @@
         font-weight: bold;
         font-size: 148px;
     }
-
-
-
-  
+   
 </style>
 </head>
 <body>
@@ -85,6 +73,7 @@
         let key =  "b4ca5947";
         var slideIndexes = 1;
 
+        
         let data = fetch(`http://www.omdbapi.com/?apikey=${key}&s=max`)
         .then((res)=>res.json())
         .then(data=>display_hotData(data));
@@ -93,32 +82,25 @@
     function display_hotData(data){
         var searching = data.Search;
         searching.forEach(indivData => {
-                var {Title,Poster} = indivData
-                // console.log(Title);
-                let results_hot  = document.getElementById("results_hot");
-                let movie_div = document.createElement("div");
-                movie_div.setAttribute("id","movie_div")
+        var {Title,Year,imdbID,Type,Poster} = indivData
+        // console.log(Title);
+        let results_hot  = document.getElementById("results_hot");
+        let movie_div = document.createElement("div");
+        movie_div.setAttribute("id","movie_div")
 
-                let posterimg = document.createElement("img");
-                posterimg.setAttribute("id","posterimgage")
-                posterimg.setAttribute("src",Poster)
+        let movieTitlesP = document.createElement("p");
+        let posterimg = document.createElement("img");
+        posterimg.setAttribute("id","posterimgage")
+        posterimg.setAttribute("src",Poster)
+        movieTitlesP.innerHTML = `Title: ${Title} Year: ${Year} imdbID: ${imdbID} Type: ${Type} `
 
-                posterimg.addEventListener("onchange",function(){
-                    hoverImage(`${Poster}`)
-                })
+        movie_div.append(movieTitlesP,posterimg)
+        results_hot.append(movie_div) 
 
-
-                movie_div.append(posterimg)
-                results_hot.append(movie_div)
         }); 
     }
 
 
-    function hoverImage(p){
-    
-  
-
-    }
 
 
 
