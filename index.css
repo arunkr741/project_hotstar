@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #0c111b;
 }
 #navbar{
     width: 100%;
@@ -29,7 +30,6 @@ img{
 #navbar>div:nth-child(3){
     width: 3%;
     height: 5vh;
-    border: 1px solid;
     margin-top: 20px;
     margin-left: 8px;
     cursor: pointer;
@@ -37,7 +37,6 @@ img{
 #navbar>div:nth-child(4){
     width: 5%;
     height: 5vh;
-    border: 1px solid;
     margin-top: 20px;
     margin-left: 8px;
     cursor: pointer;
@@ -45,7 +44,6 @@ img{
 #navbar>div:nth-child(5){
     width: 5%;
     height: 5vh;
-    border: 1px solid;
     margin-top: 20px;
     margin-left: 8px;
     cursor: pointer;
@@ -53,7 +51,6 @@ img{
 #navbar>div:nth-child(6){
     width: 5%;
     height: 5vh;
-    border: 1px solid;
     margin-top: 20px;
     margin-left: 8px;
     cursor: pointer;
@@ -61,7 +58,6 @@ img{
 #navbar>div:nth-child(7){
     width: 5%;
     height: 5vh;
-    border: 1px solid;
     margin-top: 20px;
     margin-left: 8px;
     cursor: pointer;
@@ -69,15 +65,13 @@ img{
 #navbar>div:nth-child(8){
     width: 5%;
     height: 5vh;
-    border: 1px solid;
     margin-top: 20px;
-    margin-left: 8px;
+    margin-left: 15px;
     cursor: pointer;
 }
 #navbar>div:nth-child(9){
     width: 5%;
     height: 5vh;
-    border: 1px solid;
     margin-top: 30px;
     margin-left: 8px;
     cursor: pointer;
@@ -85,27 +79,25 @@ img{
 #navbar>div:nth-child(10){
     width: 15%;
     height: 5vh;
-    border: 1px solid;
     margin-top: 20px;
-    margin-left: 190px;
+    margin-left: 170px;
     cursor: pointer;
     border-bottom: 1px solid silver;
 }
 #navbar>div:nth-child(11){
     width: 6%;
-    height: 3vh;
+    height: 4vh;
     border: 1px solid;
-    margin-top: 20px;
-    margin-left: 8px;
+    margin-top: 23px;
+    margin-left: 15px;
     border-radius: 5px;
-    background-color: blueviolet;
+    background-color: #1f80e0;
     cursor: pointer;
 }
 #navbar>div:nth-child(12){
     width: 5%;
     height: 5vh;
-    border: 1px solid;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 8px;
     cursor: pointer;
 }
@@ -116,7 +108,7 @@ img{
     margin: 3px 0;
 }
 h3,h6{
-    color: rgb(171, 175, 180);
+    color:  #ffffffcc;
     font-size: large;
     text-align: center;
     line-height: 2px;
@@ -128,15 +120,21 @@ input{
     height: 3vh;
     overflow: hidden;
     font-size: 20px;
-    margin: 0px 0;
+    margin-top: 10px;
     border: none;
     padding: 0px 0;
     /* border-bottom: 1px solid #ff6768; */
-    color: white;
+    color: #ffffffcc;
     outline: none;
     background: none;
 }
 ::placeholder{
-    color: silver;
+    color:  #ffffffcc;
     font-size: large;
+}
+#slideshow{
+    width: 90%;
+    margin: auto;
+    cursor: pointer;
+
 }
