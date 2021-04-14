@@ -120,7 +120,7 @@
     let key = "b4ca5947";
     var slideIndexes = 1;
 
-    let data = fetch(`http://www.omdbapi.com/?apikey=${key}&s=batman`)
+    var data = fetch(`http://www.omdbapi.com/?apikey=${key}&s=batman`)
         .then((res) => res.json())
         .then(data => display_hotData(data));
 
@@ -138,6 +138,7 @@
             posterimg.setAttribute("src", Poster)
             posterimg.setAttribute("id", "posterimgage")
 
+
             posterimg.addEventListener("click", function () {
                 hoverImage(`${Poster} , ${Title}`)
             })
@@ -150,20 +151,46 @@
 
 
     function hoverImage(Poster, Title) {
-        // console.log(Poster, Title);
-        
-        var results_hots = document.getElementById("results_hot");
+        console.log(Poster, Title);
 
-        var div = document.createElement("div");
-        var posterTitle = document.createElement("p");
-        posterTitle.innerText = `${Title}`
-        posterTitle.setAttribute("id", "posterTitle")
-        div.append(posterTitle)
-        results_hot.append(div)
+        /* user  after completing slide*/
+        // var results_hots = document.getElementById("results_hot");
+        // var div = document.createElement("div");
+
+        // var posterTitle = document.createElement("p");
+        // // posterTitle.innerText = `${Title}`
+        // // posterTitle.setAttribute("id", "posterTitle")
+        // div.append(posterTitle)
+        // results_hot.append(div)
 
     }
 
+    function hotSlidersLeft() {
 
+        var data = fetch(`http://www.omdbapi.com/?apikey=${key}&s=batman`)
+            .then((res) => res.json())
+            .then(data => leftIcon_hotData(data));
+    }
+
+    function leftIcon_hotData(data) {
+
+        let results_hot = document.getElementById("results_hot");
+        // results_hot.innerHTML = null
+
+        var searching = data.Search;
+        var len = searching.length;
+        // console.log(searching)
+        var arr = [];
+        searching.forEach((indivData, index) => {
+            var { Title, imdbID } = indivData;
+
+            if (index < len) {
+                arr.push(Title, imdbID)
+
+            }
+
+        })
+    }
 
 </script>
 
