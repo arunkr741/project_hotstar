@@ -24,7 +24,6 @@
             display: flex;
             flex: 1;
             justify-content: space-between;
-             /* transform: translateY(-107px); */
         }
         #results_hot2{
             display: flex;
@@ -35,14 +34,12 @@
 
         #movie_div {
             border: 1px solid chocolate;
-            padding: 2vh;
         }
 
         #posterimgage {
-            width: 100px;
-            height: 220px;
+            width: 170px;
+            height: 260px;
             text-align: center;
-            /* display: block; */
             margin: 20px 5px;
 
 
@@ -51,9 +48,7 @@
         #posterimgage:hover {
             transition: .5s ease;
             background-color: #008CBA;
-            transform: scale(1.2);
-            filter: blur(2px);
-
+            transform: scale(1.4);
         }
 
         .fas {
@@ -84,9 +79,7 @@
         }
 
 
-        #movie_div {
-            overflow: hidden;
-        }
+        
 
         #posterTitle {
             font-size: 21px;
@@ -106,6 +99,13 @@
             background-color: rgba(52, 73, 94, 0.75);
 
         }
+
+        .active {
+background-color: #717171;
+}
+#dots{
+    display: block;
+}
     </style>
 </head>
 
@@ -117,19 +117,18 @@
             <h1> fetching data </h1>
 
             <div id="results_hot">
-                <i onclick="hotSlidersRight()" class='fa fa-angle-right righticonSlider'></i>
-
+                <div id="results"> 
+                    <p> hello s</p>
+                </div>
             </div>
-
-        </div>
-        <div id="results_hot2">
-            <i onclick="hotSlidersLeft()" class='fa fa-angle-left  lefticonSlider'></i>
-
         </div>
     </div>
+    ]
+
 </body>
 
 </html>
+
 <script>
     let key = "b4ca5947";
     var slideIndexes = 1;
@@ -153,8 +152,8 @@
             posterimg.setAttribute("id", "posterimgage")
 
 
-            posterimg.addEventListener("click", function () {
-                hoverImage(`${Poster} , ${Title}`)
+            posterimg.addEventListener("mouseover", function () {
+                posterImgHover(`${Poster} , ${Title}`)
             })
 
 
@@ -164,56 +163,15 @@
     }
 
 
-    function hoverImage(Poster, Title) {
-        console.log(Poster, Title);
 
-    }
-
-    function hotSlidersLeft() {
-
-        var data = fetch(`http://www.omdbapi.com/?apikey=${key}&s=batman`)
-            .then((res) => res.json())
-            .then(data => leftIcon_hotData(data));
-    }
-
-    function leftIcon_hotData(data) {
-
-        var searching = data.Search;
-        var len = searching.length;
-
-        var i = 0;
+    function posterImgHover(t,Poster){
+        // console.log("hello",t,Poster);
+        let results = document.getElementById("results");
+        let div = document.createElement("div");
+        let p = document.createElement("p")
         
-        searching.forEach((indivData, index) => {
-            var { Title, Poster } = indivData;
-
-            if(index <= len){
-                sliders( Title, Poster);
-                // Poster.style.transform = "translateX(-107px)"
-
-            }
-            else{
-            }
-        })
-        
-        
-        function sliders(t, Poster) {
-
-            let results_hot2 = document.getElementById("results_hot2");
-            
-            
-            console.log(t, Poster)
-            let slidediv = document.createElement("div");
-            slidediv.setAttribute("id", "movie_div")
-            slidediv.style.transform = "translateX(-107px)"
-            // slidediv.style.display= "block"
-            
-            let posterimgslide = document.createElement("img");
-            posterimgslide.setAttribute("src", Poster)
-            posterimgslide.setAttribute("id", "posterimgage")
-            
-            slidediv.append(posterimgslide)
-            results_hot2.append(slidediv)
-        }
+        div.append(p);
+        results.append(div);
     }
 </script>
 
