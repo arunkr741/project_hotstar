@@ -25,11 +25,12 @@
             flex: 1;
             justify-content: space-between;
         }
-        #results_hot2{
+
+        #results_hot2 {
             display: flex;
             flex: 1;
             justify-content: space-between;
-        
+
         }
 
         #movie_div {
@@ -67,7 +68,7 @@
             color: red;
             font-weight: bold;
             font-size: 148px;
-            
+
         }
 
         .lefticonSlider {
@@ -81,31 +82,16 @@
 
         
 
+
         #posterTitle {
             font-size: 21px;
             z-index: 1;
         }
 
-
-        #posterTitle:before {
-
-            content: "";
-            display: none;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: rgba(52, 73, 94, 0.75);
-
+        #hotstarTitle{
+            color: #008CBA;
         }
 
-        .active {
-background-color: #717171;
-}
-#dots{
-    display: block;
-}
     </style>
 </head>
 
@@ -116,14 +102,15 @@ background-color: #717171;
         <div>
             <h1> fetching data </h1>
 
-            <div id="results_hot">
-                <div id="results"> 
-                    <p> hello s</p>
+            <div id="results">
+                <div id="results_hot">
+                    
                 </div>
+                <div class="results_hottie">
             </div>
         </div>
     </div>
-    ]
+    
 
 </body>
 
@@ -150,29 +137,34 @@ background-color: #717171;
             let posterimg = document.createElement("img");
             posterimg.setAttribute("src", Poster)
             posterimg.setAttribute("id", "posterimgage")
-
-
-            posterimg.addEventListener("mouseover", function () {
-                posterImgHover(`${Poster} , ${Title}`)
+            posterimg.addEventListener("mouseover",function(){
+                posterImgHover(Title);
             })
 
-
-            movie_div.append(posterimg)
+            var hotStarTitle= document.createElement("p");
+            hotStarTitle.innerText = `${Title}`
+            hotStarTitle.setAttribute("id","hotstarTitle")
+            // posterimg.append(hotStarTitle)
+            hotStarTitle.append(posterimg)
+            movie_div.append(hotStarTitle)
             results_hot.append(movie_div)
         });
     }
 
 
 
-    function posterImgHover(t,Poster){
-        // console.log("hello",t,Poster);
-        let results = document.getElementById("results");
-        let div = document.createElement("div");
-        let p = document.createElement("p")
-        
-        div.append(p);
-        results.append(div);
-    }
+    function posterImgHover(t) {
+        var results_hottie = document.createElement("results_hottie")
+        var divs = document.createElement("div")
+        var hotStarTitle= document.createElement("p");
+            hotStarTitle.innerText = t
+            hotStarTitle.setAttribute("id","hotstarTitles")
+            hotStarTitle.style.transform = "scale(1.4)"
+            hotStarTitle.style.position = "absolute";
+            
+        divs.append(hotStarTitle)
+        results_hottie.append(divs)
+}
 </script>
 
 
