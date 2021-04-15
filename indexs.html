@@ -11,132 +11,121 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Source Sans Pro', sans-serif;
+            margin: 32vh 2vh;
+            /* display: flex; */
+            /* align-items: center; */
+            justify-content: center;
             background-color: #0c111b;
-            color: #ffffff;
-            border: 1px solid #ffffff;
-            padding: 2vh;
-            width: auto;
+            /* width: 100%; */
+            /* height: 100%; */
+
         }
 
-        #results_hot {
+        .container {
             display: flex;
-            flex: 1;
-            justify-content: space-between;
+            width: 90%;
+            justify-content: space-around;
+            margin-top: -20vh;
         }
 
-        #results_hot2 {
+        .movieDiv {
+            width: 150px;
+            height: 250px;
+            padding: 24px;
+            background-color: #fff;
+            position: relative;
             display: flex;
-            flex: 1;
-            justify-content: space-between;
-
+            align-items: flex-end;
+            transition: .6s ease-out;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0, 0.5);
         }
 
-        #movie_div {
-            border: 1px solid chocolate;
+        .movieDiv:hover {
+            /* transform: translateY(25px); */
+            transform: scale(1.2);
         }
 
-        #posterimgage {
-            width: 170px;
-            height: 260px;
-            text-align: center;
-            margin: 20px 5px;
-
-
+        .movieDiv:hover:before {
+            opacity: 1;
         }
 
-        #posterimgage:hover {
-            transition: .5s ease;
-            background-color: #008CBA;
-            transform: scale(1.4);
+        .movieDiv:hover .imageDescrip {
+            opacity: 0.9;
+            transform: translateY(0);
+            margin-top: -40px;
+            border-bottom: 1px solid white;
+            border-radius: 4px;
+            
         }
 
-        .fas {
-            color: red;
-        }
-
-        i {
-            padding: 1vh 2vh;
-            margin: 70px 5px;
-        }
-
-        .righticonSlider {
-            position: absolute;
-            z-index: 1;
-            margin-left: 190vh;
-            color: red;
-            font-weight: bold;
-            font-size: 148px;
-
-        }
-
-        .lefticonSlider {
-            position: fixed;
-            z-index: 2;
-            color: green;
-            font-weight: bold;
-            font-size: 148px;
-        }
-
-
-        .hotstarTitle{
-            /* color: red; */
-            /* z-index: 1; */
-            position: absolute;
-            margin: 20px;
-            font-size: 12px;
-        }
-
-
-        .hotstarTitle:hover{
-            display: hidden;
-            color: red;
-            z-index: 1;
-            position: absolute;
-            margin: 20px;
-            font-size: 12px;
-        }
-        
-
-
-        #posterTitle {
-            font-size: 21px;
-            z-index: 1;
-        }
-
-
-        #posterTitle:before {
-
+        .movieDiv:before {
             content: "";
-            display: none;
-            height: 100%;
-            width: 100%;
             position: absolute;
             top: 0;
             left: 0;
-            background-color: rgba(52, 73, 94, 0.75);
-
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: linear-gradient(to top, #000, transparent);
+            z-index: 2;
+            transition: 0.5s;
+            opacity: 0;
         }
 
+
+        .movieDiv img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover
+        }
+
+
+
+        .movieDiv .imageDescrip {
+            position: absolute;
+            z-index: 3;
+            color: white;
+            opacity: 0;
+            transform: translateX(10px);
+            transition: 0.5s;
+            margin-top: -210px;
+            margin-left: -12px;
+            /* border: 2px solid #fff; */
+            background-color: #0c111b;
+            width: 100%;
+            font-size: 11px;
+
+
+
+            /* transform: none; */
+            outline: rgb(255, 255, 255) none 10px;
+            box-sizing: border-box;
+        }
+
+        .imageDescrip a {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            border: 1px solid red;
+            text-decoration: none;
+        }
     </style>
 </head>
 
 <body>
-    <div id="container_hot">
-        <h1> Latest & Trending </h1>
-
-        <div>
-            <h1> fetching data </h1>
-
-            <div id="results">
-                <div id="results_hot">
-                    
-                </div>
-            </div>
-        </div>
+    <h1> features </h1>
+    <div class="container">
     </div>
     
+
 
 </body>
 
@@ -154,40 +143,67 @@
     function display_hotData(data) {
         var searching = data.Search;
         searching.forEach(indivData => {
-            var { Title, Poster } = indivData
+            var { Title, Poster, imdbID } = indivData
             // console.log(Title);
-            let results_hot = document.getElementById("results_hot");
+
+            let results_hot = document.querySelector(".container");
+
             let movie_div = document.createElement("div");
-            movie_div.setAttribute("id", "movie_div")
+            movie_div.setAttribute("class", "movieDiv")
 
             let posterimg = document.createElement("img");
             posterimg.setAttribute("src", Poster)
             posterimg.setAttribute("id", "posterimgage")
 
-            var hotStarTitle= document.createElement("p");
-            hotStarTitle.innerText = `${Title}`
-            hotStarTitle.setAttribute("class","hotstarTitle")
-            console.log(hotStarTitle)
-            // posterimg.append(hotStarTitle)
-            movie_div.append(hotStarTitle,posterimg)
+            var teamText = document.createElement("div")
+            teamText.setAttribute("class", "imageDescrip")
+
+
+            var imageDescrip = document.createElement("p");
+            imageDescrip.setAttribute("class", "imageDescrip")
+            imageDescrip.innerText = `${Title}`
+            imageDescrip.style.fontSize = "12px"
+            imageDescrip.style.color= "white"
+            
+            imageDescrip.style.fontWeight = "bold"
+
+            // imageDescrip.innerText = `${Title} ${imdbID}`
+
+            // here some problem
+            var imageDescriHead = document.createElement("p");
+            // imageDescriHead.setAttribute("class", "imageDescrip")
+            imageDescriHead.innerText = `${imdbID}`
+            // end here some problem
+
+
+
+            var watchbtn = document.createElement("button");
+            watchbtn.setAttribute("class", "imageDesc");
+            watchbtn.textContent = "\n" + "+ watchlist";
+            watchbtn.style.fontSize = "12px";
+            watchbtn.style.boxSizing = "borderbox"
+            watchbtn.style.borderBottom= "1px solid transparent"
+            watchbtn.style.borderTopLeftRadius = "5px";
+            watchbtn.style.borderTopRightRadius = "5px";
+            watchbtn.style.borderBottomLeftRadius = "5px";
+            watchbtn.style.outline = "rgb(31, 128, 224) none 0px"            
+            watchbtn.style.width = "100%"
+            watchbtn.style.cursor = "pointer"
+            
+
+            imageDescrip.append(imageDescriHead, watchbtn)
+            teamText.append(imageDescrip);
+
+
+            movie_div.append(posterimg, teamText);
             results_hot.append(movie_div)
+
         });
     }
 
 
 
-    function posterImgHover(t) {
-        // console.log("hello",t,Poster);
-        let results = document.getElementById("results");
-        let div = document.createElement("div");
-        let p = document.createElement("p")
-        // p.style.display = "block"
-        // p.style.position = "relative"
-        // p.style.marginTop = "-190px"
-        // p.innerHTML = t
-        p.append(p);
-        results.append(div);
-    }
+
 </script>
 
 
