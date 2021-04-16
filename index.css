@@ -151,6 +151,37 @@ input{
 }
 
 
+#prev{
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    transform: (-40% );
+    padding: 1% 1.5%;
+    border-radius: 30px;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 40px;
+}
+#next{
+    position: absolute;
+    top: 40%;
+    right: 0%;
+    transform: (40% );
+    padding: 1% 1.5%;
+    border-radius: 30px;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 40px;
+}
+
+
+
+
+
 /* --------------added by arun------------- */
 #search_data{
     height: 400px; 
@@ -201,4 +232,5 @@ input{
     font-size: 12px;
     color: rgb(203,205,209);
 }
+
 
