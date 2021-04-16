@@ -3,7 +3,7 @@
 }
 
 body {
-    margin: 12vh 2vh;
+    margin: 12vh 5vh;
     /* display: flex; */
     /* align-items: center; */
     justify-content: center;
@@ -15,13 +15,17 @@ body {
 
 h1 {
     color: white;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 12px;
+
 }
 
 .container {
     display: flex;
     width: 90%;
     justify-content: space-around;
-    margin-top: 10vh;
+    margin-top: 5vh;
     /* border: 1px solid white; */
 
 }
@@ -30,7 +34,7 @@ h1 {
     display: flex;
     width: 90%;
     justify-content: space-around;
-    margin-top: 10vh;
+    margin-top: 5vh;
     padding: 5px;
 }
 
@@ -38,12 +42,21 @@ h1 {
     display: flex;
     width: 90%;
     justify-content: space-around;
-    margin-top: 10vh;
+    margin-top: 5vh;
+    padding: 5px;
+}
+
+
+.container4 {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin-top: 5vh;
     padding: 5px;
 }
 
 .movieDiv {
-    width: 150px;
+    width: 350px;
     height: 250px;
     padding: 24px;
     background-color: #fff;
@@ -53,12 +66,13 @@ h1 {
     transition: .6s ease-out;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0, 0.5);
     margin-left: 30px;
+    border-radius: 5px;
     /* border: 1px solid white; */
 }
 
 .movieDiv:hover {
-    /* transform: translateY(25px); */
-    transform: scale(1.2);
+    /* transform: translateX(1px); */
+    transform: scale(1.3);
 }
 
 .movieDiv:hover:before {
@@ -70,8 +84,7 @@ h1 {
     transform: translateY(0);
     margin-top: -40px;
     border-bottom: 1px solid white;
-    border-radius: 4px;
-
+    border-radius: 5px;
 }
 
 .movieDiv:before {
@@ -85,8 +98,9 @@ h1 {
     background-color: linear-gradient(to top, #000, transparent);
     z-index: 2;
     transition: 0.5s;
-    opacity: 0;
+    opacity: 10;
 }
+
 
 .movieDiv img {
     width: 100%;
@@ -96,6 +110,8 @@ h1 {
     left: 0;
     object-fit: cover
 }
+
+
 
 .movieDiv .imageDescrip {
     position: absolute;
@@ -110,6 +126,9 @@ h1 {
     background-color: #0c111b;
     width: 100%;
     font-size: 11px;
+
+
+
     /* transform: none; */
     outline: rgb(255, 255, 255) none 10px;
     box-sizing: border-box;
@@ -118,7 +137,7 @@ h1 {
 .imageDescrip a {
     width: 30px;
     height: 30px;
-    display: inline-block;
+    /* display: inline-block; */
     border: 1px solid red;
     text-decoration: none;
 }
