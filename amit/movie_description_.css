@@ -37,29 +37,27 @@ body {
 
     float: left;
 }
-
-.bottom-left {
-    position: absolute;
-    bottom: 30px;
-    left: 16px;
-    color: white;
-    display: flex;
-    /* justify-content: space-between; */
-    gap: 200px;
-   
-}
-
 .top-left {
-    position: absolute;
+   
     top: 8px;
     left: 16px;
     color: white;
 }
 
-#small_btn_icon {
+.bottom-left {
+  
+     bottom: 30px;
+    left: 16px;
+    color: white;
     display: flex;
-    gap: 10px;
+    /* justify-content: space-between; */
+    gap: 280px;
+    /* border: 1px solid red; */
+   
 }
+
+
+
 .text_box{
     width: 75%; 
     padding: 40px;
@@ -77,7 +75,8 @@ body {
 #small_icons{
     display: flex;
     gap: 50px;
-    margin-top: 40px;
+    margin-top: 50px;
+    /* border: 1px solid red; */
     
 }
 .share_icon{
@@ -134,7 +133,7 @@ body {
     background-color: #FFFFFF;
     background:0% 0%;
     transform: none;
-    transition: all 0s ease 0s;  */
+    transition: all 0s ease 0s; 
  
  
 
@@ -147,3 +146,12 @@ body {
 }
 
 
+/* --------------addded by arun -------------- */
+#details{
+   display: flex;
+   gap: 4px;
+}
+.dot{
+    font-size: 30px;
+    margin-top: -16.5px;
+}

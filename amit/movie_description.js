@@ -1,6 +1,6 @@
 async function get_data(){
     var suggestion_div = document.getElementById('suggestions_display')
-    var url = "../static/moviedata.json";
+    var url = "../amit/static/moviedata.json";
     var res =  await  (await fetch(url)).json()
 
     console.log(res)
@@ -25,3 +25,26 @@ async function get_data(){
     });
 }
 get_data()
+
+//----------------dynamic content script by arun--------------
+
+
+async function show_content(){
+    var url = new URL(window.location)
+   
+    var params = new URLSearchParams(url.search)
+
+    var title = params.get("title")
+    var apikey = params.get("apikey")
+    console.log(title,apikey)
+   var content =  await(await fetch(`http://www.omdbapi.com/?t=${title}&apikey=d3851ab0`)).json()
+   console.log(content)
+   
+    document.getElementById("title").innerHTML=`${content.Title}`
+    document.getElementById("runtime").innerHTML=`${content.Runtime}`
+    document.getElementById("year").innerHTML= `${content.Year}`
+    document.getElementById("description").innerHTML= `${content.Plot}`
+    document.getElementById("cat").innerHTML= `${content.Genre}`
+    document.getElementById("movie_image").src=content.Poster
+}
+show_content()
