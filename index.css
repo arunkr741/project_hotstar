@@ -147,6 +147,8 @@ input{
     width: 90%;
     margin: auto;
     cursor: pointer;
+    height: 500px;
+    border: 1px solid red;
 
 }
 
@@ -162,6 +164,8 @@ input{
     border-radius: 6px;
     font-family: "Roboto","HelveticaNeue-Light",sans-serif;
     line-height: 1.42857143;
+    position: relative;
+  
 }
 #search_data>div{
     height: 88px;

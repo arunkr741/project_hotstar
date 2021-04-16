@@ -21,7 +21,7 @@ menu.addEventListener('mousedown',function(){
     div.innerHTML=""
     div1.innerHTML=""
     div2.innerHTML=""
-
+})
 var menu = document.getElementById('menuicon')
 menu.addEventListener('click', function () {
     var div = document.createElement('section')
@@ -61,33 +61,51 @@ function showdata(data) {
     for (i = 0; i < 4; i++) {
         var div = document.createElement("div")
         div.innerHTML = `
-         <div>
+         <div onclick='movi_data("${Search[i].Title}")'>
             <img id="search_img"
                 src=${Search[i].Poster}>
         </div>
-        <div id="article">
+        <div onclick='movi_data("${Search[i].Title}")' id="article">
             <div>${Search[i].Title}</div>
             <div>${Search[i].Year}</div>
         </div>`
+        
         parent.append(div)
     }
-    
+}
 
-})
+function movi_data(data){
+    console.log(data)
+    
+    var url = new URL(`http://127.0.0.1:5500/amit/movie_description.html?apikey=d3851ab0&title=${data}`)
+    var params = new URLSearchParams(url.search)
+    
+    console.log(params.toString())
+ 
+    window.location.href=url
+}
+
+
+
+
+
+
+// ----------------------------slideshow script----------------------------
+
 var images=["anupama.PNG","bigbull.PNG","cricket.PNG","yerishta.PNG"]
-var i=0;
+var j=0;
 var slideshow=document.getElementById('slideshow')
 var img=document.createElement('img')
 img.style.width="100%"
-img.style.height="70vh"
+img.style.height="500px"
 slideshow.appendChild(img)
 setInterval(function(){
-    if(i==3){
-        i=0
+    if(j==3){
+        j=0
     }
-    img.setAttribute('src',images[i])
-    i=i+1
+    img.setAttribute('src',images[j])
+    j=j+1
 },4000)
 
-}
+
 
