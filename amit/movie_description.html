@@ -15,30 +15,31 @@
         <div id="main_div" >
             <div class="text_box" >
                 <div class="top-left">
-                    <h2>The Falcon and the Winter Season</h2>
-                    <p>NEW EPISODE EVERY FRIDAY AT 12:30PM.Following <br>the events of "Avengers:Endgame,"Sam wilson and
-                        <br>
-                        Bucky Barnes team up in a global adventure that test <br> their abilities and their patience.
+                    <h2 id="title">The Falcon and the Winter Season</h2>
+                    <div id="details">
+                        <div id="runtime">2 hr 30 min</div><span class="dot">.</span>
+                        <div id="year">2019</div><span class="dot">.</span>
+                        <div id="cat">superhero</div>
+                    </div>
+                    <p id="description">description
                     </p>
                 </div>
                 <div class="bottom-left">
-                    <div class="small_btn_icon">
-                        <div>
+                    <div style="margin-top: 60px;" >
+                        <div >
                             <img height="40" width="40"
                                style="border-radius: 25px;" src="https://www.hotstar.com/assets/9c3f6f0c50905bebf4b6570df3b42ca6.svg"
                                 alt="">
+                                <p style="margin-top: -30px; margin-left: 60px;">Watch Movie</p>
                         </div>
-                        <div>
-                            <p>Watch First Episode</p>
-                            <p>S1 E1 . 19 March 2021 </p>
-                        </div>
+                       
                     </div>
 
                     <div>
                         <div id="small_icons">
-                            <div>
-                                <img height="40" width="40" src="https://www.hotstar.com/assets/1fd3813027f5538464413fb8b08d9dbb.svg" alt="">
-                                <p>Watchlist</p>
+                            <div >
+                                <img height="40" width="40" onclick="add_to_watchlist()" src="https://www.hotstar.com/assets/1fd3813027f5538464413fb8b08d9dbb.svg" alt="">
+                                <p style="margin-top: 10px;">Watchlist</p>
                             </div>
 
                             <div class="share_icon">
@@ -53,7 +54,7 @@
             </div>
 
             <div id="image">
-                <img width="110%" height="350px"
+                <img  id="movie_image" width="110%" height="350px"
                     src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/6362/936362-h">
             </div>
         </div>
@@ -62,12 +63,19 @@
 
     </div>
 
-    <div id="trailer&extra">
+    <div >
           <img src="" alt="">  
     </div>
 
        
-        <div class="p_tag">
+        <div class="middle_div">
+            <div id="trailer">
+                <h1 class="p_tag">Trailer & Extras</h1>
+                <div>
+                    <img src="" alt="">
+                </div>
+               
+            </div>
             <h1 class="p_tag">More Like this</h1>
             <div id="suggestions_display">
           
