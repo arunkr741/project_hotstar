@@ -9,7 +9,7 @@ var data = fetch(`http://www.omdbapi.com/?apikey=${key}&s=batman`)
 function display_hotData(data) {
     var searching = data.Search;
     searching.forEach(indivData => {
-        var { Title, Poster, imdbID } = indivData
+        var { Title, Poster } = indivData
         // console.log(Title);
 
         let results_hot = document.querySelector(".container");
@@ -34,15 +34,6 @@ function display_hotData(data) {
 
         imageDescrip.style.fontWeight = "bold"
 
-        // imageDescrip.innerText = `${Title} ${imdbID}`
-
-        // here some problem
-        var imageDescriHead = document.createElement("p");
-        // imageDescriHead.setAttribute("class", "imageDescrip")
-        imageDescriHead.innerText = `${imdbID}`
-        // end here some problem
-
-
 
         var watchbtn = document.createElement("button");
         watchbtn.setAttribute("class", "imageDesc");
@@ -56,7 +47,7 @@ function display_hotData(data) {
         watchbtn.style.outline = "rgb(31, 128, 224) none 0px"
         watchbtn.style.width = "100%"
         watchbtn.style.cursor = "pointer"
-        imageDescrip.append(imageDescriHead, watchbtn)
+        imageDescrip.append(watchbtn)
         teamText.append(imageDescrip);
         movie_div.append(posterimg, teamText);
         results_hot.append(movie_div)
@@ -73,7 +64,7 @@ var data2 = fetch(`http://www.omdbapi.com/?apikey=${key}&s=max`)
 function display_hotData2(data) {
     var searching = data.Search;
     searching.forEach(indivData => {
-        var { Title, Poster, imdbID } = indivData
+        var { Title, Poster } = indivData
         // console.log(Title);
 
         let results_hot2 = document.querySelector(".container2");
@@ -98,11 +89,6 @@ function display_hotData2(data) {
 
         imageDescrip.style.fontWeight = "bold"
 
-        // here some problem
-        var imageDescriHead = document.createElement("p");
-        // imageDescriHead.setAttribute("class", "imageDescrip")
-        imageDescriHead.innerText = `${imdbID}`
-        // end here some problem
         var watchbtn = document.createElement("button");
         watchbtn.setAttribute("class", "imageDesc");
         watchbtn.textContent = "\n" + "+ watchlist";
@@ -116,7 +102,7 @@ function display_hotData2(data) {
         watchbtn.style.width = "100%"
         watchbtn.style.cursor = "pointer"
 
-        imageDescrip.append(imageDescriHead, watchbtn)
+        imageDescrip.append(watchbtn)
         teamText.append(imageDescrip);
         movie_div.append(posterimg, teamText);
         results_hot2.append(movie_div)
@@ -136,7 +122,7 @@ var data3 = fetch(`http://www.omdbapi.com/?apikey=${key}&s=wolverine`)
 function display_hotData3(data) {
     var searching = data.Search;
     searching.forEach(indivData => {
-        var { Title, Poster, imdbID } = indivData
+        var { Title, Poster } = indivData
         // console.log(Title);
 
         let results_hot3 = document.querySelector(".container3");
@@ -161,13 +147,7 @@ function display_hotData3(data) {
 
         imageDescrip.style.fontWeight = "bold"
 
-        // imageDescrip.innerText = `${Title} ${imdbID}`
 
-        // here some problem
-        var imageDescriHead = document.createElement("p");
-        // imageDescriHead.setAttribute("class", "imageDescrip")
-        imageDescriHead.innerText = `${imdbID}`
-        // end here some problem
 
         var watchbtn = document.createElement("button");
         watchbtn.setAttribute("class", "imageDesc");
@@ -181,7 +161,7 @@ function display_hotData3(data) {
         watchbtn.style.outline = "rgb(31, 128, 224) none 0px"
         watchbtn.style.width = "100%"
         watchbtn.style.cursor = "pointer"
-        imageDescrip.append(imageDescriHead, watchbtn)
+        imageDescrip.append(watchbtn)
         teamText.append(imageDescrip);
         movie_div.append(posterimg, teamText);
         results_hot3.append(movie_div)
@@ -198,7 +178,7 @@ var data4 = fetch(`http://www.omdbapi.com/?apikey=${key}&s=cartoon`)
 function display_hotData4(data) {
     var searching = data.Search;
     searching.forEach(indivData => {
-        var { Title, Poster, imdbID } = indivData
+        var { Title, Poster } = indivData
         // console.log(Title);
 
         let results_hot4 = document.querySelector(".container4");
@@ -223,11 +203,6 @@ function display_hotData4(data) {
 
         imageDescrip.style.fontWeight = "bold"
 
-        // here some problem
-        var imageDescriHead = document.createElement("p");
-        // imageDescriHead.setAttribute("class", "imageDescrip")
-        imageDescriHead.innerText = `${imdbID}`
-        // end here some problem
 
 
 
@@ -244,7 +219,7 @@ function display_hotData4(data) {
         watchbtn.style.width = "100%"
         watchbtn.style.cursor = "pointer"
 
-        imageDescrip.append(imageDescriHead, watchbtn)
+        imageDescrip.append(watchbtn)
         teamText.append(imageDescrip);
 
         movie_div.append(posterimg, teamText);
