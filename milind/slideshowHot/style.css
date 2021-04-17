@@ -11,7 +11,7 @@ body{
     height:80vh;
     width: 87.7vw;
     padding: 10px 0 0 10px;
-    margin: 2px;
+    margin: 5px;
 
 }
 .card__container::-webkit-scrollbar {
@@ -83,14 +83,33 @@ h3{
     font-size: 32px;
 }
 .fontawesome__circle{
-    padding: 15px 25px;
-    border-radius: 50%;
+    padding: 15px 15px;
+    border-radius: 5px;
     border: 1px solid white;
-    
     display: inline-block;
     cursor: pointer;
     margin-left: 40px;
     margin-top: 52px;
+}
+.btnleft{
+    position: absolute;
+    margin: 170px -990px;
+    opacity: 0;
+}
+
+.btnleft:hover{
+    background-color: #0c111b;
+    opacity: 0.5;
+}
+.btnright{
+    position: absolute;
+    margin: 170px 290px;
+    opacity: 0;
+}
+
+.btnright:hover{
+    background-color: #0c111b;
+    opacity: 0.5;
 }
 .far{
     color: white;
