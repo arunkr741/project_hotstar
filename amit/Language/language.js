@@ -44,11 +44,11 @@ async function go_to() {
      console.log(element.title)
     if(element.title=="Hindi"){
      console.log("Yes")
-      // location.assign("/amit/Language/Language_data/hindi.html") 
+       location.assign("/amit/Language/Language_data/hindi.html") 
     }
-    // if(element.title=="Bengali"){
-    //   location.assign("/amit/Language/Language_data/bengali.html") 
-    // }
+     if(element.title=="Bengali"){
+      location.assign("/amit/Language/Language_data/bengali.html") 
+      }
    
    });
      
