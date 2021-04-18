@@ -140,7 +140,7 @@ input{
 }
 ::placeholder{
     color:  #ffffffcc;
-    font-size: large;
+    font-size: medium;
 }
 
 #slideshow{
@@ -177,6 +177,7 @@ input{
     outline: none;
     font-size: 40px;
 }
+
 
 
 
