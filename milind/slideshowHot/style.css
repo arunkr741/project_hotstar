@@ -3,7 +3,7 @@
 }
 
 body {
-    margin: 12vh 5vh;
+    
     /* display: flex; */
     /* align-items: center; */
     justify-content: center;
@@ -117,6 +117,7 @@ h1 {
 
 
 
+
 .movieDiv .imageDescrip {
     position: absolute;
     z-index: 3;
@@ -127,7 +128,7 @@ h1 {
     margin-top: -210px;
     margin-left: -12px;
     /* border: 2px solid #fff; */
-    background-color: #0c111b;
+
     width: 100%;
     font-size: 11px;
 

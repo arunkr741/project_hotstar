@@ -125,7 +125,7 @@ input_div.addEventListener("click",stretch_input)
 
 
 
-
+// ----------------slide show functionality start --------------------
 
 
 var images=["anupama.PNG","bigbull.PNG","cricket.PNG","yerishta.PNG"]
@@ -146,7 +146,7 @@ setInterval(function(){
 
 
 
-// ----------------slide show functionality start --------------------
+
 
 function prev(){
     if(j>0){
@@ -167,8 +167,112 @@ function next(){
 
 // ----------------slide show functionality end --------------------
 
+// ---------------watchlist- start-----------------
+
+var watchlist_data;
+
+    function show_watchlist(){
+        watchlist_data = JSON.parse(localStorage.getItem("movieData"))
+        console.log(watchlist_data)
+        console.log(watchlist_data)
+        let watchlist = document.getElementById("watchlist")
+        watchlist.innerHTML=null
+        for(let i=0 ;i<watchlist_data.length;i++){
+            let maindiv = document.createElement("div")
+            maindiv.setAttribute("id","card")
+            maindiv.innerHTML=`
+                <img src=${watchlist_data[i].Poster}>
+                <div id="Watch_title">
+                    <p>${watchlist_data[i].Title}</p>
+                    <p>2hr 33min, ${watchlist_data[i].Year}, Action</p>
+                    <button  id="watch_btn">&#10004; Remove from Watchlist</button>
+                </div>
+                `
+               
+                watchlist.append(maindiv)
+        }
+        console.log("yes")
+        
+    }
+
+    show_watchlist()
+
+    
+    
 
 
+
+
+
+    let watch_btn = document.querySelectorAll("#watch_btn")
+    for(let w=0;w<watch_btn.length;w++){
+        watch_btn[w].addEventListener("click",function(){
+           
+            let movie_content = JSON.parse(localStorage.getItem("movieData"))
+            movie_content = movie_content.filter(el => el.Title != watchlist_data[w].Title)
+            localStorage.setItem("movieData", JSON.stringify(movie_content))
+            show_watchlist()
+            myfunction()
+            
+        })
+    }
+   
+    
+    
+    function myfunction(){
+
+        var nodelist = document.querySelectorAll("#card")
+    
+    for(let i=0;i<nodelist.length;i++){
+        console.log(nodelist[i])
+        // ----------watchlist remove btn--------------------
+      
+
+        function mouseover(){
+            let title = document.querySelectorAll("#Watch_title")
+            
+            let img = document.querySelectorAll("#card>img")
+            img[i].style.cssText=`
+            transition: 0.5s;
+            transform: scale(1.2);
+            `
+            title[i].style.cssText=`
+            display: block;
+            
+            transition: 0.5s;
+            transform: scale(1.2);
+            position: relative
+            
+            ` 
+        }
+        nodelist[i].addEventListener("mouseover",mouseover)
+        
+        
+      
+        function mouseout(){
+            let title = document.querySelectorAll("#Watch_title")
+            let img = document.querySelectorAll("#card>img")
+            img[i].style.cssText=`
+            transition: none;
+            transform: none;
+            `
+            title[i].style.cssText=`
+           
+            display: none;
+            transform: none;
+            transition: none;
+            
+            ` 
+        }
+        nodelist[i].addEventListener("mouseout",mouseout)
+    }
+}
+myfunction()
+    // console.log(nodelist[1].style.border="1px solid red")
+    
+
+
+// ---------------watchlist- end-----------------
 
 
 

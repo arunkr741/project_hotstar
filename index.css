@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #0c111b;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #navbar{
     width: 100%;
@@ -247,4 +248,81 @@ h3,h6{
     color: rgb(203,205,209);
 }
 
+/* ------------watchlist css-------------- */
+.watchlist{
+    height: 300px;
+    /* border: 1px solid red; */
+}
+.watchlist>h1{
+    color: white;
+    font-size: 30px;
+    line-height: 26.4px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80px;
 
+}
+#watchlist{
+    height: 250px;
+
+    margin-left: 80px;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 10px;
+}
+#card{
+    
+    /* border: 1px solid red; */
+    width: 172px;
+}
+#card>img{
+    width: 170px;
+    border-radius: 6px;
+    box-shadow: 10px 10px inherit;
+    
+}
+#card>img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+   
+    
+}
+#Watch_title{
+    color: #DADADA;
+    margin-top: -90px;
+    margin-left: 10px;
+    display: none;
+   
+    /* border: 1px solid red; */
+    
+}
+#Watch_title>p:first-child{
+    /* margin-top: -30px; */
+    font-size: 15px;
+    
+    margin-top: 10px;
+}
+#Watch_title>p:nth-child(2){
+    font-size: 11px;
+    
+    margin-top: -15px;
+}
+#Watch_title>button{
+    background-color: rgb(12,17,27);
+    width: 155px;
+    height: 20px;
+    margin-top: -20px;
+    outline: none;
+    border: none;
+    color: #909999;
+    font-size: 10px;
+    
+}
+#arun{
+    margin-left: 70px;
+}
+#arun>h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
