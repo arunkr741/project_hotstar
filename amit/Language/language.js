@@ -16,27 +16,22 @@ async function get_data1() {
     image_div1.innerHTML = `<img width="280px" style=" opacity: 0.7;" src="${res[i].image}" alt="">`;
     var para_div = document.createElement("div");
     para_div.setAttribute('class',"centered")
-    para_div.innerHTML = `<h1> ${res[i].title}</h1>`;
+    para_div.innerHTML = `<h1>${res[i].p} <br> ${res[i].title}</h1>`;
     //  console.log(para_div)
-    // image_div1.appendChild(para_div);
-   
+    image_div1.appendChild(para_div);
+    image_div1.addEventListener('click',go_to)
+    console.log(image_div1);
     
     first_div.append(image_div1);
     channel_div.append(first_div);
-    
-    first_div.addEventListener('click',function(){
-      channel_div.innerText=res.title
-      console.log('30',res.title)
-    })
     start = end;
     end = end + 5;
   }
 }
 get_data1();
 
-async function go_to(ab) {
- var req_title=ab.title
- console.log(req_title)
+async function go_to() {
+ 
   var url = "/amit/Language/languagedata.json";
   var result = await (await fetch(url)).json();
 
@@ -45,13 +40,17 @@ async function go_to(ab) {
  
   
 
-  //  result.forEach(element => {
-  //    console.log(element.title)
-  //   if(element.title==req_title){
-     
-  //    location.assign(`/amit/Language/Language_data/${req_title}.html`) 
-  //   }
-  //  });
+   result.forEach(element => {
+     console.log(element.title)
+    if(element.title=="Hindi"){
+     console.log("Yes")
+      // location.assign("/amit/Language/Language_data/hindi.html") 
+    }
+    // if(element.title=="Bengali"){
+    //   location.assign("/amit/Language/Language_data/bengali.html") 
+    // }
+   
+   });
      
   
 }
