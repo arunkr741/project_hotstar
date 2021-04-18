@@ -142,7 +142,7 @@ h3,h6{
 }
 ::placeholder{
     color:  #ffffffcc;
-    font-size: large;
+    font-size: medium;
 }
 
 /* --------------------------------nav bar style end------------------------- */
@@ -187,6 +187,7 @@ h3,h6{
     outline: none;
     font-size: 40px;
 }
+
 
 
 
