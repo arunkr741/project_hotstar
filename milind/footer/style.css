@@ -1,5 +1,5 @@
 .starFooter{
-    font-size: 11px;
+    font-size: 14px;
     color:#ffffff;
     cursor: pointer;
     flex: 1;
@@ -15,7 +15,7 @@
     margin: 0px 45px;
 }
 .starFooter + p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 li > a  {
@@ -34,8 +34,8 @@ li > a  {
 .hotstarFooterLink{
     /* border: 1px solid red;  */
     margin: 20px;  
-    font-size: 11px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 500;
 }
 .hotstarFooterLink > p{
     color: #dadada;

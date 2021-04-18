@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://vjs.zencdn.net/7.11.4/video-js.css">
 </head>
+
 <body>
-    <input type="text" name="" id="input">
-    <script>
     
-        async function getdata(){
-            var value = document.getElementById("input").value
-            var data = await(await fetch(`http://www.omdbapi.com/?s=${value}&apikey=d3851ab0`)).json()
-            console.log(data)
-        }
-       document.getElementById("input").addEventListener("keypress",function(){
-        getdata()
-       })
+
+    <video 
+        id="my-video"
+        class="video-js"
+        controls 
         
+        preload="auto" 
+        width="740" 
+        height="364" 
+        poster="poster.jpg"
+        data-setup="{}"
+    >
+        <source src="video.mp4" type="video/mp4">
+       
+        <p class="vjs-no-js">
+            To view this video
+            <a href="http://videojs.com/html5-video-support" target="_blank">
+                supports html5 video
+            </a>
+        </p>
+    </video>
+
+    <script src="https://vjs.zencdn.net/7.11.4/video.min.js">
+
+        
+
     </script>
 </body>
+
 </html>
