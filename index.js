@@ -124,6 +124,7 @@ var loginform=document.createElement('section')
  loginform.setAttribute('id','loginform')
     loginform.innerHTML=''
 login.addEventListener('click',function(){
+    if(login.innerText=="LOGIN")
     var news=document.getElementById('news')
     loginform.style.width='36vw'
     loginform.style.height='70vh'
@@ -235,8 +236,25 @@ function validateOtp(otpvalue){
     if(otpdata==otpvalue){
         document.getElementById('loginform').style.display="none"
         document.querySelector('h6').textContent="SUBHASH"
+        
     }else{
         
         document.getElementById('otp2').textContent=`Your OTP is not valid`
     }
 }
+ login.addEventListener('click',function(){
+     if(login.innerText!=='LOGIN'){
+    div.style.color='#ffffffcc'
+    div.style.marginTop='15px'
+    // div.style.background='#192133'
+    div.style.width='100px'
+    div.style.display='flex'
+    // div.style.border='1px solid red'
+    div.innerHTML=`<img src="logout.png" style="width: 20px; height: 20px; margin-left: 0px; margin-top: 13px;">
+    <h4 style="margin-left: 10px; line-height: 1px" onclick="logout()">logout</h4>`
+    document.querySelector('h6').appendChild(div)
+     }
+ })
+ function logout(){
+     window.location.href="index.html"
+ }
