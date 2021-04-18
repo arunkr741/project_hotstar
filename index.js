@@ -1,18 +1,28 @@
-
+//------------menu bar functionality start------------------
 var menu=document.getElementById('menuicon')
-    var div =document.createElement('section')
-    div.innerHTML=""
-    div.style.position='relative'
-    var div1 =document.createElement('section')
-    div1.innerHTML=""
-    div1.style.position='relative'
-    var div2 =document.createElement('section')
-    div2.innerHTML=""
-    div2.style.position='relative'
+var div =document.createElement('section')
+var div1 =document.createElement('section')
+var div2 =document.createElement('section')
+div.style.position='relative'
+div1.style.position='relative'
+div2.style.position='relative'
 
-menu.addEventListener('mouseover',function(){
+menu.addEventListener("mouseleave",function(){
+    div.innerHTML=""
+    div1.innerHTML=""
+    div2.innerHTML=""
+
+})
+
+
+menu.addEventListener("mouseover",show_menubar)
+div.addEventListener("mouseover",show_menubar)
+div1.addEventListener("mouseover",show_menubar)
+div2.addEventListener("mouseover",show_menubar)
+function show_menubar(){
+    menu.style.display="block"
     div.style.color='#ffffffcc'
-    div.style.marginTop='15px'
+    div.style.marginTop='7px'
     div.style.background='#192133'
     div.style.width='150px'
     div.style.display='flex'
@@ -31,21 +41,14 @@ menu.addEventListener('mouseover',function(){
     div2.innerHTML=`<img src="genres.png" style="width: 20px; height: 20px; margin-left: 15px; margin-top: 10px;">
     <h4 style="margin-left: 20px; line-height: 1px">Geners</h4>`
     menu.append(div,div1,div2)
-})
-menu.addEventListener('mousedown',function(){
-    div.innerHTML=""
-    div1.innerHTML=""
-    div2.innerHTML=""
-})
-var menu = document.getElementById('menuicon')
-menu.addEventListener('click', function () {
-    var div = document.createElement('section')
-    div.innerHTML = ""
-    div.style.color = 'teal'
-    div.innerHTML = `<p>languages</p><p>chanels</p><p>geners</p>`
-    menu.append(div)
+}
 
-})
+//------------menu bar functionality end------------------
+
+
+
+
+// ---------------search functionality script start--------------------------
 
     document.getElementById("search_data").style.display="none"
 
@@ -69,56 +72,111 @@ document.getElementById("input").addEventListener("keypress", function () {
     getdata()
 })
 
+
 function showdata(data) {
     var parent = document.getElementById("search_data")
     parent.innerHTML=null
     var { Search } = data
-    for (i = 0; i < 4; i++) {
+    for (let i = 0; i < 4; i++) {
         var div = document.createElement("div")
         div.innerHTML = `
-         <div>
+         <div onclick='movi_data("${Search[i].Title}")'>
             <img id="search_img"
                 src=${Search[i].Poster}>
         </div>
-        <div id="article">
+        <div onclick='movi_data("${Search[i].Title}")' id="article">
             <div>${Search[i].Title}</div>
             <div>${Search[i].Year}</div>
         </div>`
+        
         parent.append(div)
     }
-    
 }
+
+function movi_data(data){
+    console.log(data)
+    
+
+    var url = new URL(`http://127.0.0.1:5500/amit/movie_description.html?apikey=d3851ab0&title=${data}`)
+    var params = new URLSearchParams(url.search)
+    
+    console.log(params.toString())
+ 
+    window.location.href=url
+}
+
+
+var input_div=document.getElementById("input_div")
+
+function stretch_input(){
+input_div.style.width="20%"
+input_div.style.marginLeft="120px"
+}
+input_div.addEventListener("click",stretch_input)
+
+// input_div.addEventListener("mouseout",function(){
+//     input_div.style.width="15%"
+// input_div.style.marginLeft="200px"
+// })
+
+
+
+// ---------------search functionality script end--------------------------
+
+
+
+
+
+
 var images=["anupama.PNG","bigbull.PNG","cricket.PNG","yerishta.PNG"]
-var i=0;
+var j=0;
 var slideshow=document.getElementById('slideshow')
 var img=document.createElement('img')
 img.style.width="100%"
-img.style.height="70vh"
+img.style.height="500px"
 slideshow.appendChild(img)
 img.setAttribute('src',images[0])
 setInterval(function(){
-    if(i==3){
-        i=0
+    if(j==4){
+        j=0
     }
-    img.setAttribute('src',images[i])
-    i=i+1
-},4000)
+    img.setAttribute('src',images[j])
+    j=j+1
+},3000)
+
+
+
+// ----------------slide show functionality start --------------------
+
 function prev(){
-    if(i>0){
-        i--
+    if(j>0){
+        j--
     }else{
-        i=images.length-1
+        j=images.length-1
     }
-    img.setAttribute('src',images[i])
+    img.setAttribute('src',images[j])
 }
 function next(){
-    if(i<images.length-1){
-        i++
+    if(j<images.length-1){
+        j++
     }else{
-        i=0
+        j=0
     }
-    img.setAttribute('src',images[i])
+    img.setAttribute('src',images[j])
 }
+
+// ----------------slide show functionality end --------------------
+
+
+
+
+
+
+// ----------------login functionality script start --------------------
+
+
+
+
 var login=document.getElementById('login')
 var loginform=document.createElement('section')
  loginform.setAttribute('id','loginform')
@@ -182,6 +240,7 @@ login.addEventListener('click',function(){
     })
     })
 })
+
 function display(){
     loginform.style.display="none"
 }
@@ -191,7 +250,7 @@ btn2.setAttribute('id','btn2')
 function validate(){
     if(phone.value.length==10){
         localStorage.setItem('phone',JSON.stringify(phone.value))
-        var data=JSON.parse(localStorage.getItem('phone'))
+        let data=JSON.parse(localStorage.getItem('phone'))
         document.getElementById('h2').textContent=`Enter the 4-digit code sent to ${data} `
         var otp = Math.floor(1000 + Math.random() * 9000);
         localStorage.setItem('otp',JSON.stringify(otp))
@@ -240,3 +299,6 @@ function validateOtp(otpvalue){
         document.getElementById('otp2').textContent=`Your OTP is not valid`
     }
 }
+
+
+

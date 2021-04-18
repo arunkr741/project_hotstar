@@ -1,0 +1,1919 @@
+{
+    "data": {
+        "itemids": [
+            "1260022117",
+            "1000034503",
+            "1260042584",
+            "1260053117",
+            "1000239447",
+            "1000053838",
+            "1000213010",
+            "1000220603",
+            "1260024321",
+            "1000034506",
+            "1000235906",
+            "1260036203",
+            "1000230996",
+            "1260025583",
+            "1260012707",
+            "1000213089",
+            "1000065771",
+            "1000109846",
+            "1000152229",
+            "1000230498"
+        ],
+        "items":[ {
+            "1000034503": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "Bang Bang",
+                "contentId": 1000034503,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=211&contentId=1000034503&offset=0&size=20&tao=0&tas=5",
+                "id": 211,
+                "description": "Rajveer sets out to steal the world's most coveted diamond, the Kohinoor, triggering a series of fights, car chases and a revenge plot.",
+                "duration": 8812,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "Fox Star Studios",
+                "cpDisplayName": "Fox Star Studios",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Action"
+                ],
+                "lang": [
+                    "Hindi"
+                ],
+                "premium": false,
+                "live": false,
+                "hboContent": false,
+                "vip": false,
+                "encrypted": false,
+                "startDate": 1416297000,
+                "endDate": 1732645740,
+                "year": 2014,  
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000034503",
+                "images": {
+                    "h": "sources/r1/cms/prod/old_images/MOVIE/4503/1000034503/1000034503-h",
+                    "i": "sources/r1/cms/prod/6026/796026-i",
+                    "t": "sources/r1/cms/prod/6027/796027-t",
+                    "v": "sources/r1/cms/prod/old_images/vertical/MOVIE/4503/1000034503/1000034503-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/old_images/MOVIE/4503/1000034503/1000034503-h",
+                        "i": "sources/r1/cms/prod/6026/796026-i",
+                        "t": "sources/r1/cms/prod/6027/796027-t",
+                        "v": "sources/r1/cms/prod/old_images/vertical/MOVIE/4503/1000034503/1000034503-v"
+                    }
+                },
+                "studioId": 17,
+                "studioName": "Star Gold",
+                "contentDownloadable": false,
+                "playbackType": "INTERNAL",
+                "monetisable": true,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1000228333"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "12+",
+                "crisp": "Sex, Violence",
+                "detail": "Some Sexual references, Moderate Violence",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1000228333",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    }
+                ],
+                "isSubTagged": false
+            },
+            "1000034506": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "Singham Returns",
+                "contentId": 1000034506,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=213&contentId=1000034506&offset=0&size=20&tao=0&tas=5",
+                "id": 213,
+                "description": "Bad-ass cop Bajirao Singham is back as the DCP of Mumbai. To pave the way for justice, he has to deal with a corrupt politician and an immoral god-man.",
+                "duration": 8001,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "Ajay Devgn Films, Rohit Shetty Productions",
+                "cpDisplayName": "Ajay Devgn Films, Rohit Shetty Productions",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Action"
+                ],
+                "lang": [
+                    "Hindi"
+                ],
+                "premium": false,
+                "live": false,
+                "hboContent": false,
+                "vip": false,
+                "encrypted": false,
+                "startDate": 1416297000,
+                "endDate": 1728844140,
+                "year": 2014,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000034506",
+                "images": {
+                    "h": "sources/r1/cms/prod/old_images/MOVIE/4506/1000034506/1000034506-h",
+                    "i": "sources/r1/cms/prod/6092/796092-i",
+                    "t": "sources/r1/cms/prod/6093/796093-t",
+                    "v": "sources/r1/cms/prod/old_images/vertical/MOVIE/4506/1000034506/1000034506-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/old_images/MOVIE/4506/1000034506/1000034506-h",
+                        "i": "sources/r1/cms/prod/6092/796092-i",
+                        "t": "sources/r1/cms/prod/6093/796093-t",
+                        "v": "sources/r1/cms/prod/old_images/vertical/MOVIE/4506/1000034506/1000034506-v"
+                    }
+                },
+                "studioId": 17,
+                "studioName": "Star Gold",
+                "contentDownloadable": false,
+                "playbackType": "INTERNAL",
+                "monetisable": true,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1000229254"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "12+",
+                "crisp": "Sex, Violence",
+                "detail": "Some Sexual references, Mild Violence",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1000229254",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    }
+                ],
+                "isSubTagged": false
+            },
+            "1000053838": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "Baby",
+                "contentId": 1000053838,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=491&contentId=1000053838&offset=0&size=20&tao=0&tas=5",
+                "id": 491,
+                "description": "Post 26/11 Mumbai attacks, a special intelligence task force will stop at nothing to foil another such assault on the Indian soil.",
+                "duration": 9187,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "T-Series, Crouching Tiger",
+                "cpDisplayName": "T-Series, Crouching Tiger",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Action"
+                ],
+                "lang": [
+                    "Hindi",
+                    "Tamil"
+                ],
+                "premium": false,
+                "live": false,
+                "hboContent": false,
+                "vip": false,
+                "encrypted": false,
+                "startDate": 1426530540,
+                "endDate": 1741890540,
+                "year": 2015,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000053838",
+                "images": {
+                    "h": "sources/r1/cms/prod/7414/957414-h",
+                    "v": "sources/r1/cms/prod/7416/957416-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/7414/957414-h",
+                        "v": "sources/r1/cms/prod/7416/957416-v"
+                    }
+                },
+                "studioId": 17,
+                "studioName": "Star Gold",
+                "contentDownloadable": true,
+                "playbackType": "INTERNAL",
+                "monetisable": true,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    },
+                    {
+                        "hide": false,
+                        "id": 5,
+                        "name": "Tamil",
+                        "iso3code": "tam",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=5&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1000228332"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "15+",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1000228332",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    }
+                ],
+                "isSubTagged": false
+            },
+            "1000065771": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "Bodyguard",
+                "contentId": 1000065771,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=1023&contentId=1000065771&offset=0&size=20&tao=0&tas=5",
+                "id": 1023,
+                "description": "A bodyguard falls in love with a woman over the phone, without realising that she is actually the woman he is protecting.",
+                "duration": 7518,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "Reel Life Productions",
+                "cpDisplayName": "Reel Life Productions",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Action"
+                ],
+                "lang": [
+                    "Hindi"
+                ],
+                "premium": false,
+                "live": false,
+                "hboContent": false,
+                "vip": false,
+                "encrypted": false,
+                "startDate": 1501461000,
+                "endDate": 1722364140,
+                "year": 2011,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000065771",
+                "images": {
+                    "h": "sources/r1/cms/prod/old_images/MOVIE/5771/1000065771/1000065771-h",
+                    "i": "sources/r1/cms/prod/6358/796358-i",
+                    "t": "sources/r1/cms/prod/6359/796359-t",
+                    "v": "sources/r1/cms/prod/old_images/vertical/MOVIE/5771/1000065771/1000065771-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/old_images/MOVIE/5771/1000065771/1000065771-h",
+                        "i": "sources/r1/cms/prod/6358/796358-i",
+                        "t": "sources/r1/cms/prod/6359/796359-t",
+                        "v": "sources/r1/cms/prod/old_images/vertical/MOVIE/5771/1000065771/1000065771-v"
+                    }
+                },
+                "studioId": 17,
+                "studioName": "Star Gold",
+                "contentDownloadable": false,
+                "playbackType": "INTERNAL",
+                "monetisable": true,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1000229558"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "12+",
+                "crisp": "Language, Violence",
+                "detail": "Mild Language , Mild Violence",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1000229558",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    }
+                ],
+                "isSubTagged": false
+            },
+            "1000109846": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "10 Ka Dum",
+                "contentId": 1000109846,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=2486&contentId=1000109846&offset=0&size=20&tao=0&tas=5",
+                "id": 2486,
+                "description": "A local don hires a driver, Vikram, to escort a young woman to Daksha Bhai's house. A game of cat and mouse begins when Vikram realises their true motive.",
+                "duration": 8089,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "AR Murugadoss Productions",
+                "cpDisplayName": "AR Murugadoss Productions",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Action"
+                ],
+                "lang": [
+                    "Hindi"
+                ],
+                "premium": false,
+                "live": false,
+                "hboContent": false,
+                "vip": false,
+                "encrypted": false,
+                "startDate": 1473294600,
+                "endDate": 1769711340,
+                "year": 2015,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000109846",
+                "images": {
+                    "h": "sources/r1/cms/prod/old_images/MOVIE/9846/1000109846/1000109846-h",
+                    "v": "sources/r1/cms/prod/old_images/vertical/MOVIE/9846/1000109846/1000109846-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/old_images/MOVIE/9846/1000109846/1000109846-h",
+                        "v": "sources/r1/cms/prod/old_images/vertical/MOVIE/9846/1000109846/1000109846-v"
+                    }
+                },
+                "studioId": 17,
+                "studioName": "Star Gold",
+                "contentDownloadable": false,
+                "playbackType": "INTERNAL",
+                "monetisable": true,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1260011213"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "12+",
+                "crisp": "Violence ",
+                "detail": "Mild Violence",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1260011213",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    }
+                ],
+                "isSubTagged": false
+            },
+            "1000152229": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "Dishoom",
+                "contentId": 1000152229,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=2670&contentId=1000152229&offset=0&size=20&tao=0&tas=5",
+                "id": 2670,
+                "description": "A no-nonsense cop accompanied by a rookie go on a 36-hour manhunt for a missing Indian cricketer, who has been kidnapped under mysterious circumstances.",
+                "duration": 6972,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "Nadiadwala Grandson Entertainment",
+                "cpDisplayName": "Nadiadwala Grandson Entertainment",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Action"
+                ],
+                "lang": [
+                    "Hindi"
+                ],
+                "premium": false,
+                "live": false,
+                "hboContent": false,
+                "vip": false,
+                "encrypted": false,
+                "startDate": 1474849800,
+                "endDate": 1790274540,
+                "year": 2016,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000152229",
+                "images": {
+                    "h": "sources/r1/cms/prod/old_images/MOVIE/2229/1000152229/1000152229-h",
+                    "i": "sources/r1/cms/prod/6184/796184-i",
+                    "t": "sources/r1/cms/prod/6186/796186-t",
+                    "v": "sources/r1/cms/prod/old_images/vertical/MOVIE/2229/1000152229/1000152229-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/old_images/MOVIE/2229/1000152229/1000152229-h",
+                        "i": "sources/r1/cms/prod/6184/796184-i",
+                        "t": "sources/r1/cms/prod/6186/796186-t",
+                        "v": "sources/r1/cms/prod/old_images/vertical/MOVIE/2229/1000152229/1000152229-v"
+                    }
+                },
+                "studioId": 17,
+                "studioName": "Star Gold",
+                "contentDownloadable": false,
+                "playbackType": "INTERNAL",
+                "monetisable": true,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1000228331"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "12+",
+                "crisp": "Violence ",
+                "detail": "Moderate Violence, Some Drug references",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1000228331",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    }
+                ],
+                "isSubTagged": false
+            },
+            "1000213010": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "Taqdeer",
+                "contentId": 1000213010,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=413732&contentId=1000213010&offset=0&size=20&tao=0&tas=5",
+                "id": 413732,
+                "description": "Avinash gets separated from his childhood love Priya. Will fate play its part and bring the two estranged lovers together as grown-ups?",
+                "duration": 7256,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "Annapurna Studios",
+                "cpDisplayName": "Annapurna Studios",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Action"
+                ],
+                "lang": [
+                    "Hindi"
+                ],
+                "premium": false,
+                "live": false,
+                "hboContent": false,
+                "vip": false,
+                "encrypted": false,
+                "startDate": 1527640200,
+                "endDate": 1841509740,
+                "year": 2017,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000213010",
+                "images": {
+                    "h": "sources/r1/cms/prod/4739/14739-h",
+                    "i": "sources/r1/cms/prod/6391/796391-i",
+                    "m": "sources/r1/cms/prod/4742/14742-m",
+                    "t": "sources/r1/cms/prod/6392/796392-t",
+                    "v": "sources/r1/cms/prod/4740/14740-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/4739/14739-h",
+                        "i": "sources/r1/cms/prod/6391/796391-i",
+                        "m": "sources/r1/cms/prod/4742/14742-m",
+                        "t": "sources/r1/cms/prod/6392/796392-t",
+                        "v": "sources/r1/cms/prod/4740/14740-v"
+                    }
+                },
+                "studioId": 17,
+                "studioName": "Star Gold",
+                "contentDownloadable": false,
+                "playbackType": "INTERNAL",
+                "monetisable": true,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1000228326"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "PG",
+                "crisp": "Violence ",
+                "detail": "Mild Violence",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1000228326",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    }
+                ],
+                "isSubTagged": false
+            },
+            "1000213089": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "Baaghi 2",
+                "contentId": 1000213089,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=417310&contentId=1000213089&offset=0&size=20&tao=0&tas=5",
+                "id": 417310,
+                "description": "A tough army officer searches for his ex-lover's child, who is kidnapped under mysterious circumstances. However, his quest is not easy.",
+                "duration": 8076,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "Nadiadwala Grandson Entertainment",
+                "cpDisplayName": "Nadiadwala Grandson Entertainment",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Action"
+                ],
+                "lang": [
+                    "Hindi"
+                ],
+                "premium": false,
+                "live": false,
+                "hboContent": false,
+                "vip": false,
+                "encrypted": false,
+                "startDate": 1528677000,
+                "endDate": 1842805740,
+                "year": 2018,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000213089",
+                "images": {
+                    "h": "sources/r1/cms/prod/5461/245461-h",
+                    "i": "sources/r1/cms/prod/6282/796282-i",
+                    "m": "sources/r1/cms/prod/9467/249467-m",
+                    "t": "sources/r1/cms/prod/6283/796283-t",
+                    "v": "sources/r1/cms/prod/5462/245462-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/5461/245461-h",
+                        "i": "sources/r1/cms/prod/6282/796282-i",
+                        "m": "sources/r1/cms/prod/9467/249467-m",
+                        "t": "sources/r1/cms/prod/6283/796283-t",
+                        "v": "sources/r1/cms/prod/5462/245462-v"
+                    }
+                },
+                "contentDownloadable": false,
+                "playbackType": "INTERNAL",
+                "monetisable": true,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1000205721"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "12+",
+                "crisp": "Violence ",
+                "detail": "Strong Violence ",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1000205721",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    }
+                ],
+                "isSubTagged": false
+            },
+            "1000220603": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "Aiyaary",
+                "contentId": 1000220603,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=459104&contentId=1000220603&offset=0&size=20&tao=0&tas=5",
+                "id": 459104,
+                "description": "Jai Bakshi, an ex-military man,  pledges to bring the government down. Now it is up to Colonel Abhay Singh, his superior, who has to stop him at all costs.",
+                "duration": 9092,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "Motion Picture Capital",
+                "cpDisplayName": "Motion Picture Capital",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Action"
+                ],
+                "lang": [
+                    "Hindi"
+                ],
+                "premium": true,
+                "live": false,
+                "hboContent": false,
+                "vip": true,
+                "encrypted": false,
+                "startDate": 1537921800,
+                "endDate": 1840559399,
+                "year": 2018,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000220603",
+                "images": {
+                    "h": "sources/r1/cms/prod/454/30454-h",
+                    "i": "sources/r1/cms/prod/6438/796438-i",
+                    "m": "sources/r1/cms/prod/464/30464-m",
+                    "t": "sources/r1/cms/prod/6439/796439-t",
+                    "v": "sources/r1/cms/prod/457/30457-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/454/30454-h",
+                        "i": "sources/r1/cms/prod/6438/796438-i",
+                        "m": "sources/r1/cms/prod/464/30464-m",
+                        "t": "sources/r1/cms/prod/6439/796439-t",
+                        "v": "sources/r1/cms/prod/457/30457-v"
+                    }
+                },
+                "studioId": 17,
+                "studioName": "Star Gold",
+                "contentDownloadable": true,
+                "playbackType": "INTERNAL",
+                "monetisable": true,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "labels": [
+                    "VIP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1000228320"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "12+",
+                "crisp": "Violence",
+                "detail": "Moderate violence",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1000228320",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    }
+                ],
+                "isSubTagged": false
+            },
+            "1000230498": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "Shaolin",
+                "contentId": 1000230498,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=522996&contentId=1000230498&offset=0&size=20&tao=0&tas=5",
+                "id": 522996,
+                "description": "Hou Jie, the warlord has defeated his rival. However, the victory has come at a heavy price. Dispirited, he turns to a Shaolin monastery to atone for his sins.",
+                "duration": 6947,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "SIPL",
+                "cpDisplayName": "SIPL",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Action"
+                ],
+                "lang": [
+                    "Hindi"
+                ],
+                "premium": false,
+                "live": false,
+                "hboContent": false,
+                "vip": false,
+                "encrypted": false,
+                "startDate": 1550881800,
+                "endDate": 1630348199,
+                "year": 2011,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000230498",
+                "images": {
+                    "h": "sources/r1/cms/prod/533/290533-h",
+                    "m": "sources/r1/cms/prod/535/290535-m",
+                    "v": "sources/r1/cms/prod/534/290534-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/533/290533-h",
+                        "m": "sources/r1/cms/prod/535/290535-m",
+                        "v": "sources/r1/cms/prod/534/290534-v"
+                    }
+                },
+                "studioId": 17,
+                "studioName": "Star Gold",
+                "contentDownloadable": false,
+                "playbackType": "INTERNAL",
+                "monetisable": true,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1000241688"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "15+",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1000241688",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    }
+                ],
+                "isSubTagged": false
+            },
+            "1000230996": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "Jawaan",
+                "contentId": 1000230996,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=525734&contentId=1000230996&offset=0&size=20&tao=0&tas=5",
+                "id": 525734,
+                "description": "When Keshav, an international criminal, plans to destroy India, his childhood friend Jai takes it upon himself to save the day, even at the cost of his family.",
+                "duration": 6255,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "SIPL",
+                "cpDisplayName": "SIPL",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Action"
+                ],
+                "lang": [
+                    "Hindi"
+                ],
+                "premium": false,
+                "live": false,
+                "hboContent": false,
+                "vip": false,
+                "encrypted": false,
+                "startDate": 1551632400,
+                "endDate": 1845743399,
+                "year": 2017,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000230996",
+                "images": {
+                    "h": "sources/r1/cms/prod/5450/305450-h",
+                    "i": "sources/r1/cms/prod/6058/796058-i",
+                    "m": "sources/r1/cms/prod/5452/305452-m",
+                    "t": "sources/r1/cms/prod/6059/796059-t",
+                    "v": "sources/r1/cms/prod/5451/305451-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/5450/305450-h",
+                        "i": "sources/r1/cms/prod/6058/796058-i",
+                        "m": "sources/r1/cms/prod/5452/305452-m",
+                        "t": "sources/r1/cms/prod/6059/796059-t",
+                        "v": "sources/r1/cms/prod/5451/305451-v"
+                    }
+                },
+                "studioId": 17,
+                "studioName": "Star Gold",
+                "contentDownloadable": false,
+                "playbackType": "INTERNAL",
+                "monetisable": true,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1000241678"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "12+",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1000241678",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    }
+                ],
+                "isSubTagged": false
+            },
+            "1000235906": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "Junglee",
+                "contentId": 1000235906,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=558854&contentId=1000235906&offset=0&size=20&tao=0&tas=5",
+                "id": 558854,
+                "description": "Back in his hometown after years, Raj befriends Bhola, an elephant. As time passes, he discovers a deep-rooted poaching scandal, which changes his life forever.",
+                "duration": 6897,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "Novi",
+                "cpDisplayName": "Hotstar",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Action"
+                ],
+                "lang": [
+                    "Hindi"
+                ],
+                "premium": false,
+                "live": false,
+                "hboContent": false,
+                "vip": false,
+                "encrypted": false,
+                "startDate": 1558722900,
+                "endDate": 1874341799,
+                "year": 2019,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000235906",
+                "images": {
+                    "h": "sources/r1/cms/prod/1322/441322-h",
+                    "i": "sources/r1/cms/prod/6005/796005-i",
+                    "m": "sources/r1/cms/prod/8376/458376-m",
+                    "t": "sources/r1/cms/prod/6006/796006-t",
+                    "v": "sources/r1/cms/prod/1327/441327-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/1322/441322-h",
+                        "i": "sources/r1/cms/prod/6005/796005-i",
+                        "m": "sources/r1/cms/prod/8376/458376-m",
+                        "t": "sources/r1/cms/prod/6006/796006-t",
+                        "v": "sources/r1/cms/prod/1327/441327-v"
+                    }
+                },
+                "studioId": 82,
+                "studioName": "Junglee Pictures Limited",
+                "contentDownloadable": false,
+                "playbackType": "INTERNAL",
+                "monetisable": true,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1000231312"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "12+",
+                "crisp": "Violence, Language",
+                "detail": "Moderate Violence, Mild Language",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1000231312",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    }
+                ],
+                "isSubTagged": false
+            },
+            "1000239447": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "India’s Most Wanted",
+                "contentId": 1000239447,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=582349&contentId=1000239447&offset=0&size=20&tao=0&tas=5",
+                "id": 582349,
+                "description": "Five ordinary men, one global terrorist, witness India's biggest manhunt operation in this film inspired by true events.",
+                "duration": 7306,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "Novi",
+                "cpDisplayName": "Hotstar",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Action"
+                ],
+                "lang": [
+                    "Hindi"
+                ],
+                "premium": false,
+                "live": false,
+                "hboContent": false,
+                "vip": false,
+                "encrypted": false,
+                "startDate": 1563474900,
+                "endDate": 1847557799,
+                "year": 2019,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000239447",
+                "images": {
+                    "h": "sources/r1/cms/prod/9438/529438-h",
+                    "i": "sources/r1/cms/prod/6426/796426-i",
+                    "t": "sources/r1/cms/prod/6427/796427-t",
+                    "v": "sources/r1/cms/prod/9439/529439-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/9438/529438-h",
+                        "i": "sources/r1/cms/prod/6426/796426-i",
+                        "t": "sources/r1/cms/prod/6427/796427-t",
+                        "v": "sources/r1/cms/prod/9439/529439-v"
+                    }
+                },
+                "studioId": 80,
+                "studioName": "Fox Star Studios",
+                "contentDownloadable": false,
+                "playbackType": "INTERNAL",
+                "monetisable": true,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "parentalRating": 2,
+                "parentalRatingName": "12+",
+                "crisp": "Violence",
+                "detail": "Moderate Violence",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "isSubTagged": false
+            },
+            "1260012707": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "Kanpuriye",
+                "contentId": 1260012707,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=614990&contentId=1260012707&offset=0&size=20&tao=0&tas=5",
+                "id": 614990,
+                "description": "Jaitun, Jugnu and Vijay's dreams are hanging by a thread. While they struggle to prove their mettle, life keeps taking them for a spin.",
+                "duration": 6208,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "Novi Digital",
+                "cpDisplayName": "Hotstar",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Drama"
+                ],
+                "lang": [
+                    "Hindi"
+                ],
+                "premium": true,
+                "live": false,
+                "hboContent": false,
+                "vip": true,
+                "encrypted": false,
+                "startDate": 1571941500,
+                "endDate": 1887557400,
+                "year": 2019,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1260012707",
+                "images": {
+                    "h": "sources/r1/cms/prod/4711/664711-h",
+                    "i": "sources/r1/cms/prod/6315/796315-i",
+                    "t": "sources/r1/cms/prod/6316/796316-t",
+                    "v": "sources/r1/cms/prod/4712/664712-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/4711/664711-h",
+                        "i": "sources/r1/cms/prod/6315/796315-i",
+                        "t": "sources/r1/cms/prod/6316/796316-t",
+                        "v": "sources/r1/cms/prod/4712/664712-v"
+                    }
+                },
+                "studioId": 76,
+                "studioName": "Saregama India Limited",
+                "contentDownloadable": true,
+                "playbackType": "INTERNAL",
+                "monetisable": false,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 3,
+                        "name": "Drama",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=3&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "labels": [
+                    "VIP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1260012834"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "15+",
+                "crisp": "Language",
+                "detail": "Moderate coarse Language, Strong sexual references",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1260012834",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    },
+                    {
+                        "contentId": "1260013707",
+                        "playbackType": "INTERNAL",
+                        "orientation": "VERTICAL"
+                    }
+                ],
+                "isSubTagged": false
+            },
+            "1260022117": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "Tanhaji",
+                "contentId": 1260022117,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=664013&contentId=1260022117&offset=0&size=20&tao=0&tas=5",
+                "id": 664013,
+                "description": "As Aurangzeb captures the Kondhana Fort, Tanhaji Malusare, Shivaji Maharaj's trusted military leader and braveheart, ventures out to win it back.",
+                "duration": 7956,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "Novi Digital",
+                "cpDisplayName": "Hotstar",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Action"
+                ],
+                "lang": [
+                    "Hindi",
+                    "Marathi"
+                ],
+                "premium": false,
+                "live": false,
+                "hboContent": false,
+                "vip": false,
+                "encrypted": false,
+                "startDate": 1583433069,
+                "endDate": 1898965740,
+                "year": 2020,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1260022117",
+                "images": {
+                    "h": "sources/r1/cms/prod/2886/892886-h",
+                    "v": "sources/r1/cms/prod/7676/647676-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/2886/892886-h",
+                        "v": "sources/r1/cms/prod/7676/647676-v"
+                    }
+                },
+                "studioId": 81,
+                "studioName": "Ajay Devgn Films LLP",
+                "contentDownloadable": true,
+                "playbackType": "INTERNAL",
+                "monetisable": true,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    },
+                    {
+                        "hide": false,
+                        "id": 4,
+                        "name": "Marathi",
+                        "iso3code": "mar",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=4&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 2,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1260022739"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "15+",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1260022738",
+                        "playbackType": "INTERNAL",
+                        "orientation": "VERTICAL"
+                    },
+                    {
+                        "contentId": "1260022739",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    }
+                ],
+                "isSubTagged": false
+            },
+            "1260024321": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "Angrezi Medium",
+                "contentId": 1260024321,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=674779&contentId=1260024321&offset=0&size=20&tao=0&tas=5",
+                "id": 674779,
+                "description": "Champak, a simple Mithai-seller, will go to any lengths to fulfil daughter Tarika's dream of studying in London, triggering a chain of hilarious misadventures.",
+                "duration": 8723,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "Novi Digital",
+                "cpDisplayName": "Hotstar",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Drama"
+                ],
+                "lang": [
+                    "Hindi"
+                ],
+                "premium": false,
+                "live": false,
+                "hboContent": false,
+                "vip": false,
+                "encrypted": false,
+                "startDate": 1586111400,
+                "endDate": 1901644140,
+                "year": 2020,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1260024321",
+                "images": {
+                    "h": "sources/r1/cms/prod/6660/956660-h",
+                    "i": "sources/r1/cms/prod/6102/796102-i",
+                    "t": "sources/r1/cms/prod/6103/796103-t",
+                    "v": "sources/r1/cms/prod/6662/956662-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/6660/956660-h",
+                        "i": "sources/r1/cms/prod/6102/796102-i",
+                        "t": "sources/r1/cms/prod/6103/796103-t",
+                        "v": "sources/r1/cms/prod/6662/956662-v"
+                    }
+                },
+                "studioId": 108,
+                "studioName": "Reliance Industries Limited",
+                "contentDownloadable": true,
+                "playbackType": "INTERNAL",
+                "monetisable": true,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 3,
+                        "name": "Drama",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=3&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1260025381"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "12+",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1260024424",
+                        "playbackType": "INTERNAL",
+                        "orientation": "VERTICAL"
+                    },
+                    {
+                        "contentId": "1260025381",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    }
+                ],
+                "isSubTagged": false
+            },
+            "1260025583": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "Baaghi 3",
+                "contentId": 1260025583,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=681734&contentId=1260025583&offset=0&size=20&tao=0&tas=5",
+                "id": 681734,
+                "description": "In a twisted turn of events, when a group of deadly terrorists kidnap Ronnie's elder brother in Syria, he sets off on a mission to bring him back.",
+                "duration": 8697,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "Novi Digital",
+                "cpDisplayName": "Hotstar",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Action"
+                ],
+                "lang": [
+                    "Hindi"
+                ],
+                "premium": false,
+                "live": false,
+                "hboContent": false,
+                "vip": false,
+                "encrypted": true,
+                "startDate": 1588271400,
+                "endDate": 1872268140,
+                "year": 2020,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1260025583",
+                "images": {
+                    "h": "sources/r1/cms/prod/6535/846535-h",
+                    "v": "sources/r1/cms/prod/6536/846536-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/6535/846535-h",
+                        "v": "sources/r1/cms/prod/6536/846536-v"
+                    }
+                },
+                "studioId": 80,
+                "studioName": "Fox Star Studios",
+                "contentDownloadable": true,
+                "playbackType": "INTERNAL",
+                "monetisable": true,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "NO_COMPROMISE",
+                "downloadDrmClass": "NO_COMPROMISE",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1260025752"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "12+",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1260025752",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    },
+                    {
+                        "contentId": "1260025778",
+                        "playbackType": "INTERNAL",
+                        "orientation": "VERTICAL"
+                    }
+                ],
+                "isSubTagged": false
+            },
+            "1260036203": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "The Big Bull",
+                "contentId": 1260036203,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=721449&contentId=1260036203&offset=0&size=20&tao=0&tas=5",
+                "id": 721449,
+                "description": "During the late '80s, Hemant Shah, the man with the Midas touch, pulled off the biggest hustle that shook India's financial fabric. Inspired by true events.",
+                "duration": 9216,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "Novi Digital",
+                "cpDisplayName": "Hotstar",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Crime",
+                    "Drama"
+                ],
+                "lang": [
+                    "Hindi"
+                ],
+                "premium": true,
+                "live": false,
+                "hboContent": false,
+                "vip": true,
+                "encrypted": false,
+                "startDate": 1617888600,
+                "endDate": 1943893740,
+                "year": 2021,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1260036203",
+                "images": {
+                    "h": "sources/r1/cms/prod/9648/959648-h",
+                    "v": "sources/r1/cms/prod/9649/959649-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/9648/959648-h",
+                        "v": "sources/r1/cms/prod/9649/959649-v"
+                    }
+                },
+                "studioId": 81,
+                "studioName": "Ajay Devgn Films LLP",
+                "contentDownloadable": true,
+                "playbackType": "INTERNAL",
+                "monetisable": false,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 10,
+                        "name": "Crime",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=10&offset=0&size=20"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Drama",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=3&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "labels": [
+                    "VIP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1260057722",
+                    "1260057985",
+                    "1260057986",
+                    "1260057984",
+                    "1260058222"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "12+",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1260057724",
+                        "playbackType": "INTERNAL",
+                        "orientation": "VERTICAL"
+                    },
+                    {
+                        "contentId": "1260057722",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    },
+                    {
+                        "contentId": "1260057985",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    },
+                    {
+                        "contentId": "1260057986",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    },
+                    {
+                        "contentId": "1260057984",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    },
+                    {
+                        "contentId": "1260058222",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    }
+                ],
+                "isSubTagged": true
+            },
+            "1260042584": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "Bahut Hua Sammaan",
+                "contentId": 1260042584,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=766655&contentId=1260042584&offset=0&size=20&tao=0&tas=5",
+                "id": 766655,
+                "description": "Perpetually failing engineering students Bony and Fundoo get talked into robbing a bank by the campus loon. What follows is something neither anticipated.",
+                "duration": 7516,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "Novi Digital",
+                "cpDisplayName": "Hotstar",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Comedy",
+                    "Thriller"
+                ],
+                "lang": [
+                    "Hindi"
+                ],
+                "premium": true,
+                "live": false,
+                "hboContent": false,
+                "vip": true,
+                "encrypted": false,
+                "startDate": 1601577000,
+                "endDate": 1908728940,
+                "year": 2020,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1260042584",
+                "images": {
+                    "h": "sources/r1/cms/prod/3254/803254-h",
+                    "v": "sources/r1/cms/prod/3256/803256-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/3254/803254-h",
+                        "v": "sources/r1/cms/prod/3256/803256-v"
+                    }
+                },
+                "studioId": 76,
+                "studioName": "Saregama India Limited",
+                "contentDownloadable": true,
+                "playbackType": "INTERNAL",
+                "monetisable": false,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 8,
+                        "name": "Comedy",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=8&offset=0&size=20"
+                    },
+                    {
+                        "id": 18,
+                        "name": "Thriller",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=18&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "labels": [
+                    "VIP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1260042750"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "15+",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1260042750",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    },
+                    {
+                        "contentId": "1260042751",
+                        "playbackType": "INTERNAL",
+                        "orientation": "VERTICAL"
+                    }
+                ],
+                "isSubTagged": true
+            },
+            "1260053117": {
+                "imageAttributes": "artwork_logic=default_fallback",
+                "title": "Chaddi",
+                "contentId": 1260053117,
+                "uri": "https://api.hotstar.com/o/v1/movie/detail?id=843139&contentId=1260053117&offset=0&size=20&tao=0&tas=5",
+                "id": 843139,
+                "description": "Trapped in a loveless marriage, Mrs Chaddha, a lonely housewife, finds an unusual love. As she falls further, a weird secret unravels.",
+                "duration": 1033,
+                "entityType": "MOVIE",
+                "contentType": "MOVIE",
+                "contentProvider": "Gorilla Shorts",
+                "cpDisplayName": "Gorilla Shorts",
+                "cpLogoUrl": "https://secure-media.hotstar.com/static/trending/logos/studio/circular/GorillaShorts.png",
+                "assetType": "MOVIE",
+                "genre": [
+                    "Romance",
+                    "Comedy"
+                ],
+                "lang": [
+                    "Hindi"
+                ],
+                "premium": false,
+                "live": false,
+                "hboContent": false,
+                "vip": false,
+                "encrypted": false,
+                "startDate": 1611736200,
+                "endDate": 1642788000,
+                "year": 2021,
+                "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1260053117",
+                "images": {
+                    "h": "sources/r1/cms/prod/8130/928130-h",
+                    "v": "sources/r1/cms/prod/8131/928131-v"
+                },
+                "imageSets": {
+                    "DARK_THEME": null,
+                    "DEFAULT": {
+                        "h": "sources/r1/cms/prod/8130/928130-h",
+                        "v": "sources/r1/cms/prod/8131/928131-v"
+                    }
+                },
+                "studioId": 204,
+                "studioName": "Addict Studios India Private Limited",
+                "contentDownloadable": true,
+                "playbackType": "INTERNAL",
+                "monetisable": true,
+                "langObjs": [
+                    {
+                        "hide": false,
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }
+                ],
+                "genreObjs": [
+                    {
+                        "id": 4,
+                        "name": "Romance",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=4&offset=0&size=20"
+                    },
+                    {
+                        "id": 8,
+                        "name": "Comedy",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=8&offset=0&size=20"
+                    }
+                ],
+                "languageSelector": 1,
+                "drmClass": "BEST_EFFORT",
+                "downloadDrmClass": "BEST_EFFORT",
+                "contentStartPointSeconds": 0,
+                "badges": [
+                    "NP"
+                ],
+                "clipType": "VOD",
+                "trailers": [
+                    "1260053113"
+                ],
+                "parentalRating": 2,
+                "parentalRatingName": "15+",
+                "crisp": "Sex",
+                "detail": "Mild sexual content",
+                "isSocialEnabled": false,
+                "loginNudgeStatus": "DEFAULT",
+                "orientation": "HORIZONTAL",
+                "autoplayObjs": [
+                    {
+                        "contentId": "1260053113",
+                        "playbackType": "INTERNAL",
+                        "orientation": "HORIZONTAL"
+                    }
+                ],
+                "isSubTagged": false
+            }
+        }],
+        "next_page_url": "/v1/users/a07f4c2413904df4a6868220bde0cad9/trays/ymal?offset=20&item_id=1260036204&lang_code=&limit=20",
+        "updated_at": 0
+    },
+    "status": true
+}
