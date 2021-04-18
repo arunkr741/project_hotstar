@@ -1,0 +1,63 @@
+#telgu_display {
+    height: 1248.76px;
+    width: 1450.2px;
+    display: block;
+  
+    box-sizing: border-box;
+    color: white;
+    transform: none;
+    transition: all 0s ease 0s;
+    font-size: 11.25px;
+    text-decoration: white;
+    word-spacing: 0px;
+    font-family: "Roboto", sans-serif;
+    margin: auto;
+    display: flex;
+  
+    flex-wrap: wrap;
+  }
+  #first_div {
+    margin: auto;
+  }
+  .image_div:hover {
+    cursor: pointer;
+    transform: scale(1.14);
+  
+    z-index: 1;
+  }
+  .image_div:hover .centered {
+    display: block;
+  }
+  .image_div {
+    height: 164.438px;
+    width: 275.656px;
+    /* position: absolute; */
+    /* display: block; */
+    top: 0px;
+    bottom: 0.275px;
+    right: 0px;
+    left: 0px;
+    cursor: pointer;
+    display: flex;
+  
+    position: relative;
+    bottom: 8px;
+    right: 10px;
+    transition: transform 0.2s ease-in-out;
+    margin: 5px;
+  }
+  .image_div > img {
+    border-radius: 7px;
+  }
+  .centered {
+    display: none;
+    position: absolute;
+    top: 65%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+  }
+  .title {
+    font-size: 11.25px;
+    font-weight: 7;
+  }
+  

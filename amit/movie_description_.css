@@ -9,10 +9,11 @@ body {
 #cont {
     height: 350px;
     margin-left: 5%;
-    margin-top: 70px;
+    margin-top: -15em;
     width: 86%;
     position: absolute;
     background-color: rgb(7, 9, 14);
+    
  
 
 }
@@ -20,7 +21,6 @@ body {
 #movie {
 
     height: 480px;
-    /* border: 1px solid red; */
     margin-left: 60px;
     margin-right: 60px;
 
@@ -72,6 +72,7 @@ body {
 #main_div{
     display: flex;
    
+   
     
 }
 #small_icons{
@@ -96,14 +97,7 @@ body {
     padding: 20px;
     
 }
-#image_div{
-    height:233.4px;
-   
-    margin: 15px,0,10px,0;
- 
-   
-   
-}
+
 #images{
     border-radius: 5px;
     position: relative;
@@ -120,30 +114,23 @@ body {
         display: inline-block;
         z-index: 1;
         box-sizing: border-box;
-        transition: font-size 0.25s ease-in os;
+        /* transition: font-size 0.25s ease-in os; */
 
       
 }
 .p_tag{
-    /* cursor: pointer;
-    /* display: inline; */
+    cursor: pointer;
     font-size: 20px;
-    line-height: 22px; 
-    text-decoration: none solid rgb(31,128,224); 
+    /* line-height: 22px;  */
+    /* text-decoration: none solid rgb(31,128,224);  */
     
-    background-color: #FFFFFF;
-    background:0% 0%;
-    transform: none;
-    transition: all 0s ease 0s;  */
- 
- 
+    /* background-color: #FFFFFF; */
+    /* background:0% 0%; */
+    /* transform: none; */
+    /* transition: all 0s ease 0s;   */
 
 }
-.text_class{
-    color: red;
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-}
+
+
 
 
