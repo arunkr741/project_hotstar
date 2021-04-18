@@ -62,9 +62,22 @@
                 <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/187/940187-h" alt="arun">
                 
             </div>
-            
+          
             
         </div>
     </div>
+    <button onclick="param()">params</button>
+    <script>
+        function param(){
+            var url = new URL(window.location)
+   
+            var params = new URLSearchParams(url.search)
+        
+            var title = params.get("title")
+            var apikey = params.get("apikey")
+            console.log(title,apikey)
+        }
+        
+    </script>
 </body>
 </html>
