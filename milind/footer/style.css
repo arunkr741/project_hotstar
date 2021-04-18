@@ -1,51 +1,61 @@
+.starFooter{
+    font-size: 14px;
+    color:#ffffff;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    margin: 12px
+}
+.starFooter > li {
+    text-align: center;
+    margin: 12px;
+    list-style: none;
+ }
+.starFooter > p {
+    margin: 0px 45px;
+}
+.starFooter + p {
+    font-size: 14px;
+}
 
-    .starFooter{
-        font-size: 14px;
-        color:#ffffff;
-        cursor: pointer;
-        flex: 1;
-        display: flex;
-        margin: 12px
-    }
-    .starFooter > li {
-        text-align: center;
-        margin: 12px;
-        list-style: none;
-     }
-    .starFooter > p {
-        margin: 0px 45px;
-    }
-    li > a  {
-        color: #fff;
-        text-decoration: none;
-        margin-left: 10px;
-    }
+li > a  {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
 
-    .hotstarFooter{
-        display: flex;
-        flex: 1;
-        flex-direction: row;
-        /* border: 1px solid green; */
-        justify-content: space-around;
-    }
-    .hotstarFooterLink{
-        /* border: 1px solid red;  */
-        margin: 20px;  
-    }
-    .hotstarFooterLink > p{
-        color: #dadada;
-        /* text-align: center; */
-    }
-    .hotstarFooterLink > img{
-        width: 50px;
+.hotstarFooter{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    /* border: 1px solid green; */
+    justify-content: space-around;
+}
+.hotstarFooterLink{
+    /* border: 1px solid red;  */
+    margin: 20px;  
+    font-size: 14px;
+    font-weight: 500;
+}
+.hotstarFooterLink > p{
+    color: #dadada;
+    /* text-align: center; */
+    margin-left: 22px;
+}
+.hotstarFooterLink > img{
+    width: 30px;
+    border-radius: 5px;
 
-    }
-    .hotstarFooterLink2 > img{
-        width: 50px;
-        height: 42px;
-        margin-left: -10px;
-    }
-    .footersHotstar{
-        background-color: #0c111b;
-        border-radius: 5px;
-    }
+}
+.hotstarFooterLink2 > img{
+    width: 70px;
+    height: 42px;
+    margin-left: -10px;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-left: 2px;
+}
+.footersHotstar{
+    background-color: #0c111b;
+    border-radius: 5px;
+}

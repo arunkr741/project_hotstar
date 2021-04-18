@@ -6,9 +6,7 @@ let data = fetch(`http://www.omdbapi.com/?apikey=${key}&s=${title[Math.floor(Mat
     .then((res) => res.json())
     .then(data => display_hotData(data));
 
-    function param(){
-        
-    }
+   
 
 function display_hotData(data) {
     let searching = data.Search;
@@ -117,6 +115,8 @@ function display_hotData(data) {
 
 // 2
 
+// 2
+
 let data2 = fetch(`http://www.omdbapi.com/?apikey=${key}&s=${title[Math.floor(Math.random()*title.length)]}`)
     .then((res) => res.json())
     .then(data => display_hotData2(data));
@@ -142,9 +142,11 @@ function display_hotData2(data) {
         posterimg.setAttribute("src", Poster)
         posterimg.setAttribute("class", "posterimgage")
 
-
-        let teamText = document.createElement("div")
+        var teamText = document.createElement("div")
         teamText.setAttribute("class", "imageDescrip")
+
+        // let teamText = document.createElement("div")
+        // teamText.setAttribute("class", "imageDescrip")
 
 
         let imageDescrip = document.createElement("p");
@@ -154,7 +156,7 @@ function display_hotData2(data) {
         imageDescrip.style.color = "white"
 
         imageDescrip.style.fontWeight = "bold"
-
+        // imageDescrip.style.fontWeight = "bold"
         // imageDescrip.innerText = `${Title} ${imdbID}`
 
         // here some problem
@@ -181,6 +183,9 @@ function display_hotData2(data) {
         watchbtn.style.color = "white";
         watchbtn.style.fontSize = "bold";
 
+// var data3 = fetch(`http://www.omdbapi.com/?apikey=${key}&s=wolverine`)
+//     .then((res) => res.json())
+//     .then(data => display_hotData3(data));
 
         let count = 0
         watchbtn.addEventListener("click", function () {
@@ -217,6 +222,9 @@ function display_hotData2(data) {
         teamText.append(imageDescrip);
 
 
+         posterimg = document.createElement("img");
+        posterimg.setAttribute("src", Poster)
+        posterimg.setAttribute("id", "posterimgage")
 
 
         movie_div.append(posterimg, teamText);
@@ -226,6 +234,7 @@ function display_hotData2(data) {
 }
 
 
+        
 
 // 3
 
@@ -446,3 +455,73 @@ function display_hotData4(data) {
 
     });
 }
+
+
+window.addEventListener("load", execute)
+function execute() {
+    document.querySelector(".slideshow-container").addEventListener("mouseleave", leave)
+    document.querySelector(".slideshow-container").addEventListener("mouseenter", enter)
+    leave()
+    let btnleft = document.querySelector(".btnleft")
+    let btnright = document.querySelector(".btnright")
+    btnright.addEventListener("click", scrollright)
+    btnleft.addEventListener("click", scrollleft)
+}
+
+function scrollright() {
+    console.log("object")
+    document.querySelector(".card__container").scrollBy(250, 0)
+    document.querySelector(".card__container").style.padding = "0px"
+}
+function scrollleft() {
+    console.log("object")
+    document.querySelector(".card__container").scrollBy(-250, 0)
+}
+
+let sliding
+let slideIndex = 1;
+function leave() {
+    console.log("leave")
+    sliding = setInterval(showSlidess, 3000)
+}
+function enter() {
+    console.log("enter")
+    clearInterval(sliding)
+}
+showSlides(slideIndex);
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+var showSlidess = function () {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+};

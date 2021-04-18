@@ -77,7 +77,7 @@ function showdata(data) {
     var parent = document.getElementById("search_data")
     parent.innerHTML=null
     var { Search } = data
-    for (i = 0; i < 4; i++) {
+    for (let i = 0; i < 4; i++) {
         var div = document.createElement("div")
         div.innerHTML = `
          <div onclick='movi_data("${Search[i].Title}")'>
@@ -283,19 +283,126 @@ myfunction()
 
 var login=document.getElementById('login')
 var loginform=document.createElement('section')
+ loginform.setAttribute('id','loginform')
     loginform.innerHTML=''
 login.addEventListener('click',function(){
     var news=document.getElementById('news')
     loginform.style.width='36vw'
-    loginform.style.height='80vh'
+    loginform.style.height='70vh'
     // loginform.style.border='1px solid red'
     loginform.style.position='relative'
-    loginform.style.marginTop='45px'
+    loginform.style.marginTop='75px'
     loginform.style.background='#141b29'
     loginform.innerHTML=`<button style='float: right; font-size: 20px; color: #ffffffcc; background: none;
-    outline: none; border: none;'>&#10006;</button><br> <h2 style="margin-left: 35px; margin-top: 100px; color: #ffffffcc;">Login to continue</h2>
-    <button style="margin-left:35px; margin-top: 30px; width: 80%; height: 50px; background: none; border: 2px solid 
-    blue; outline: none; font-size: 20px;color: blue;">Have a Facebook/Email Account</button`
+    outline: none; border: none;' onclick=" display()">&#10006;</button><br> <h2 id="h2" style="margin-left: 35px; margin-top: 100px; color: #ffffffcc;">Login to continue</h2>
+    <button id="btn" style="margin-left:35px; margin-top: 30px; width: 80%; height: 50px; background: none; border: 1px solid 
+    #1f80e0; outline: none; font-size: 17px;color: #1f80e0;">Have a Facebook/Email Account?</button>
+    <h3 id="h3" style="margin-top: 50px;">
+    or</h3> <div id="box" style="width: 80%; height: 40px; border-bottom: 2px solid #1f80e0; margin-left: 35px; margin-top: 30px; display: flex;">
+    <div style="width: 7%;">
+    <h3 id="inputbox">+91</h3></div>
+    <div id= "bordr" style="width: 0.5px; height:20px; background: #1f80e0; margin-left: 10px; margin-top: 10px"></div>
+    <input id="phone" style=" width: 60%;border:none;outline:none;font-size: 17px; margin-left: 10px;background: rgb(20,27,41); color: white;" type="text" placeholder= "Enter your mobile number"/></div>`
     news.append(loginform)
+    loginform.style.display="block"
+    var phone=document.getElementById('phone')
+    var p=document.createElement('p')
+    p.setAttribute('id','otp2')
+    p.innerHTML=""
+    var btn1=document.createElement('button')
+    btn1.setAttribute("id","btn1")
+    var policy=document.createElement('div')
+    policy.setAttribute('id','policy')
+    phone.addEventListener('keypress',function(){
+        p.style.marginLeft='35px'
+        document.getElementById('h2').textContent=`Continue Using Phone`
+        document.getElementById('btn').style.display='none'
+        document.getElementById('h3').style.display='none'
+        btn1.style.width='80%'
+        btn1.style.height='50px'
+        btn1.style.marginLeft='35px'
+        btn1.style.background='#1f80e0'
+        btn1.style.border='none'
+        btn1.style.outline='none'
+        btn1.style.color='#ffffff'
+        btn1.style.fontSize='12px'
+        btn1.innerHTML=`<h4>CONTINUE&#62</h4>`
+        policy.style.display='flex'
+        policy.style.marginLeft='35px'
+        policy.innerHTML=`<p style=" color: #919191 ">By proceeding you agree to the</p> <a style="
+        margin-top: 15px; text-decoration: none; color: #1f80e0" href='#'>Term of use</a> <p style=" color: #919191 ">and</p><a style="
+        margin-top: 15px; text-decoration: none; color: #1f80e0" href='#'>Privacy policy</a>`
+       p.innerHTML=`<p style=" color: red;" >please enter your phone number</p>`
+       loginform.appendChild(p)
+       loginform.appendChild(btn1)
+       loginform.appendChild(policy)
+       var run=document.getElementById('btn1')
+       var flag=true;
+       var inputbox=document.getElementById('inputbox')
+    run.addEventListener('click',function(){
+         validate()
+    })
+    })
 })
+
+function display(){
+    loginform.style.display="none"
+}
+var otpbox=document.createElement('input')
+var btn2=document.createElement('button')
+btn2.setAttribute('id','btn2')
+function validate(){
+    if(phone.value.length==10){
+        localStorage.setItem('phone',JSON.stringify(phone.value))
+        let data=JSON.parse(localStorage.getItem('phone'))
+        document.getElementById('h2').textContent=`Enter the 4-digit code sent to ${data} `
+        var otp = Math.floor(1000 + Math.random() * 9000);
+        localStorage.setItem('otp',JSON.stringify(otp))
+        var otp1=JSON.parse(localStorage.getItem('otp'))
+        phone.style.display='none'
+        document.getElementById('otp2').textContent=`Your OTP is ${otp1}`
+        otp2.style.color='green'
+        inputbox.style.display="none"
+        // document.getElementById('phone').display="none"
+        document.getElementById('phone').placeholder="Enter OTP"
+        document.getElementById('bordr').style.display="none"
+        otpbox.style.width="20%"
+        otpbox.style.height="30px"
+        otpbox.placeholder="Enter OTP"
+        otpbox.setAttribute('id','otpvalue')
+        document.getElementById('btn1').style.display="none"
+        document.getElementById('policy').style.display="none"
+        document.getElementById('box').appendChild(otpbox)
+        btn2.style.width='80%'
+        btn2.style.height='50px'
+        btn2.style.marginLeft='35px'
+        btn2.style.background='#1f80e0'
+        btn2.style.border='none'
+        btn2.style.outline='none'
+        btn2.style.color='#ffffff'
+        btn2.style.fontSize='12px'
+        btn2.innerHTML=`<h4>CONTINUE&#62</h4>`
+        document.getElementById('loginform').appendChild(btn2)
+        document.getElementById('btn2').addEventListener('click',function(){
+            var otpvalue=document.getElementById('otpvalue').value
+             validateOtp(otpvalue)
+        })
+    }else{
+        document.getElementById('otp2').innerHTML="please enter valid  phone no"
+        document.getElementById('otp2').style.color="red"
+    }
+}
+function validateOtp(otpvalue){
+    var otpdata=JSON.parse(localStorage.getItem('otp'))
+    console.log(otpdata==otpvalue)
+    if(otpdata==otpvalue){
+        document.getElementById('loginform').style.display="none"
+        document.querySelector('h6').textContent="SUBHASH"
+    }else{
+        
+        document.getElementById('otp2').textContent=`Your OTP is not valid`
+    }
+}
+
+
 

@@ -6,33 +6,265 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css"/>
+    
+    <link rel="stylesheet" href="./style.css" />    
 </head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 12vh 5vh;
+        justify-content: center;
+        background-color: #0c111b;
+    }
+
+    h1 {
+        color: white;
+        font-size: 32px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 12px;
+    }
+
+    .container {
+        display: flex;
+        width: 90%;
+        justify-content: space-around;
+        margin-top: 5vh;
+
+    }
+
+    .container2 {
+        display: flex;
+        width: 90%;
+        justify-content: space-around;
+        margin-top: 5vh;
+        padding: 5px;
+    }
+
+    .container3 {
+        display: flex;
+        width: 90%;
+        justify-content: space-around;
+        margin-top: 5vh;
+        padding: 5px;
+    }
+
+
+    .container4 {
+        display: flex;
+        width: 90%;
+        justify-content: space-around;
+        margin-top: 5vh;
+        padding: 5px;
+    }
+
+    .movieDiv {
+        width: 350px;
+        height: 250px;
+        padding: 24px;
+        background-color: #fff;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        transition: .6s ease-out;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0, 0.5);
+        margin-left: 30px;
+        border-radius: 5px;
+    }
+
+    .movieDiv:hover {
+        transform: scale(1.3);
+    }
+
+    .movieDiv:hover:before {
+        opacity: 1;
+    }
+
+    .movieDiv:hover .imageDescrip {
+        opacity: 0.9;
+        transform: translateY(0);
+        margin-top: -40px;
+        border-bottom: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .movieDiv:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: linear-gradient(to top, #000, transparent);
+        z-index: 2;
+        transition: 0.5s;
+        opacity: 10;
+    }
+
+
+    .movieDiv img {
+        width: 120%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover
+    }
+
+
+
+    .movieDiv .imageDescrip {
+        position: absolute;
+        z-index: 3;
+        color: white;
+        opacity: 0;
+        transform: translateX(10px);
+        transition: 0.5s;
+        margin-top: -210px;
+        margin-left: -12px;
+        background-color: #0c111b;
+        width: 100%;
+        font-size: 11px;
+
+
+
+        /* transform: none; */
+        outline: rgb(255, 255, 255) none 10px;
+        box-sizing: border-box;
+    }
+
+    .imageDescrip a {
+        width: 30px;
+        height: 30px;
+        /* display: inline-block; */
+        border: 1px solid red;
+        text-decoration: none;
+    }
+</style>
 
 <body>
-    <h1> Hari Nirmal Talkies </h1>
+
+
+    <h1> MOVIES RECOMMEDED TO YOU </h1>
     <div class="container">
     </div>
-
-    <h1> New Realease </h1>
+    <h1> NEW REALEASE </h1>
     <div class="container2">
+
     </div>
 
-    <h1> video </h1>
+    <h1> CARTOON MOVIES </h1>
+    <div class="container4">
+    </div>
+
+    <h1> VIDEO </h1>
     <div class="container3">
     </div>
 
+<!-- added by me -->
     <h1>Madhuri Talkies</h1>
     <div class="container4">
     </div>
 
+
+<!-- added by me -->
+
+    <div class="slideshow-container">
+        <a class="prev" onclick="plusSlides(-1)"></a>
+        <a class="next" onclick="plusSlides(1)"></a>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+<!-- some problem in background div -->
+    <div class="background">
+        <div class="extra">
+            <div class="extra__bottom">
+                <h1 class="extra__bottom__h3">New Trailer</h3>
+                    <div class="buttons">
+                        <i class="far fa-angle-left fa-1x fontawesome__circle btnleft">&#10094; </i>
+                        <i class="far fa-angle-right fa-1x fontawesome__circle btnright">&#10095;</i>
+                    </div>
+            </div>
+        </div>
+        <div class="card__container">
+            <div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+                    alt="">
+                <div class="inner__card">
+
+
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BNDdjYmFiYWEtYzBhZS00YTZkLWFlODgtY2I5MDE0NzZmMDljXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                    alt="">
+                <div class="inner__card">
+
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzg1MDQxMTQ2OF5BMl5BanBnXkFtZTcwMTk3MjAzOQ@@._V1_SX300.jpg"
+                    alt="">
+                <div class="inner__card">
+
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BYThjYzcyYzItNTVjNy00NDk0LTgwMWQtYjMwNmNlNWJhMzMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+                    alt="">
+                <div class="inner__card">
+
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTYwNjAyODIyMF5BMl5BanBnXkFtZTYwNDMwMDk2._V1_SX300.jpg"
+                    alt="">
+                <div class="inner__card">
+
+                </div>
+            </div>
+
+
+            <div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BOGZmYzVkMmItM2NiOS00MDI3LWI4ZWQtMTg0YWZkODRkMmViXkEyXkFqcGdeQXVyODY0NzcxNw@@._V1_SX300.jpg"
+                    alt="">
+                <div class="inner__card">
+
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BMGQ5YTM1NmMtYmIxYy00N2VmLWJhZTYtN2EwYTY3MWFhOTczXkEyXkFqcGdeQXVyNTA2NTI0MTY@._V1_SX300.jpg"
+                    alt="">
+                <div class="inner__card">
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTAyNzU3MDI@._V1_SX300.jpg"
+                    alt="">
+                <div class="inner__card">
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BMzIxMDkxNDM2M15BMl5BanBnXkFtZTcwMDA5ODY1OQ@@._V1_SX300.jpg"
+                    alt="">
+                <div class="inner__card">
+
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BMThlYjgyMzctYTEzMS00ODkxLThkMmYtYWI5MzA3Mzk2Y2IwXkEyXkFqcGdeQXVyNjMxODMyODU@._V1_SX300.jpg"
+                    alt="">
+                <div class="inner__card">
+
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
 <script src="./slide.js"></script>
-
-
-<!-- http://www.omdbapi.com/?apikey=b4ca5947&s=%22batman%22 -->
