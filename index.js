@@ -65,7 +65,7 @@ function show_menubar(){
 async function getdata() {
     document.getElementById("search_data").style.display="none"
     var value = document.getElementById("input").value
-    var data = await (await fetch(`http://www.omdbapi.com/?s=${value}&apikey=d3851ab0`)).json()
+    var data = await (await fetch(`https://www.omdbapi.com/?s=${value}&apikey=d3851ab0`)).json()
 
 
     var { Response } = data
@@ -107,7 +107,7 @@ function movi_data(data){
     console.log(data)
     
 
-    var url = new URL(`http://127.0.0.1:5500/amit/movie_description.html?apikey=d3851ab0&title=${data}`)
+    var url = new URL(`https://127.0.0.1:5500/amit/movie_description.html?apikey=d3851ab0&title=${data}`)
     var params = new URLSearchParams(url.search)
     
     console.log(params.toString())
@@ -292,12 +292,12 @@ myfunction()
 
 
 
-
 var login=document.getElementById('login')
 var loginform=document.createElement('section')
  loginform.setAttribute('id','loginform')
     loginform.innerHTML=''
 login.addEventListener('click',function(){
+   
     var news=document.getElementById('news')
     loginform.style.width='36vw'
     loginform.style.height='70vh'

@@ -2,7 +2,7 @@ let key = "b4ca5947";
 let slideIndexes = 1;
 let title = ["batman","avengers","spider","wolverine","mad","x-men"]
 
-let data = fetch(`http://www.omdbapi.com/?apikey=${key}&s=${title[Math.floor(Math.random()*title.length)]}`)
+let data = fetch(`https://www.omdbapi.com/?apikey=${key}&s=${title[Math.floor(Math.random()*title.length)]}`)
     .then((res) => res.json())
     .then(data => display_hotData(data));
 
@@ -82,7 +82,7 @@ function display_hotData(data) {
                     show_watchlist()
                     myfunction()
                 } else {
-                    // icon.src = "https://www.hotstar.com/assets/1fd3813027f5538464413fb8b08d9dbb.svg"
+                    // icon.src = "httpss://www.hotstar.com/assets/1fd3813027f5538464413fb8b08d9dbb.svg"
                     let movie_content = JSON.parse(localStorage.getItem("movieData"))
                     movie_content = movie_content.filter(el => el.Title != indivData.Title)
                     localStorage.setItem("movieData", JSON.stringify(movie_content))
@@ -117,7 +117,7 @@ function display_hotData(data) {
 
 // 2
 
-let data2 = fetch(`http://www.omdbapi.com/?apikey=${key}&s=${title[Math.floor(Math.random()*title.length)]}`)
+let data2 = fetch(`https://www.omdbapi.com/?apikey=${key}&s=${title[Math.floor(Math.random()*title.length)]}`)
     .then((res) => res.json())
     .then(data => display_hotData2(data));
 
@@ -183,7 +183,7 @@ function display_hotData2(data) {
         watchbtn.style.color = "white";
         watchbtn.style.fontSize = "bold";
 
-// var data3 = fetch(`http://www.omdbapi.com/?apikey=${key}&s=wolverine`)
+// var data3 = fetch(`https://www.omdbapi.com/?apikey=${key}&s=wolverine`)
 //     .then((res) => res.json())
 //     .then(data => display_hotData3(data));
 
@@ -203,7 +203,7 @@ function display_hotData2(data) {
                     show_watchlist()
                     myfunction()
                 } else {
-                    // icon.src = "https://www.hotstar.com/assets/1fd3813027f5538464413fb8b08d9dbb.svg"
+                    // icon.src = "httpss://www.hotstar.com/assets/1fd3813027f5538464413fb8b08d9dbb.svg"
                     let movie_content = JSON.parse(localStorage.getItem("movieData"))
                     movie_content = movie_content.filter(el => el.Title != indivData.Title)
                     localStorage.setItem("movieData", JSON.stringify(movie_content))
@@ -240,7 +240,7 @@ function display_hotData2(data) {
 
 
 
-let data3 = fetch(`http://www.omdbapi.com/?apikey=${key}&s=${title[Math.floor(Math.random()*title.length)]}`)
+let data3 = fetch(`https://www.omdbapi.com/?apikey=${key}&s=${title[Math.floor(Math.random()*title.length)]}`)
     .then((res) => res.json())
     .then(data => display_hotData3(data));
 
@@ -317,7 +317,7 @@ function display_hotData3(data) {
                     show_watchlist()
                     myfunction()
                 } else {
-                    // icon.src = "https://www.hotstar.com/assets/1fd3813027f5538464413fb8b08d9dbb.svg"
+                    // icon.src = "httpss://www.hotstar.com/assets/1fd3813027f5538464413fb8b08d9dbb.svg"
                     let movie_content = JSON.parse(localStorage.getItem("movieData"))
                     movie_content = movie_content.filter(el => el.Title != indivData.Title)
                     localStorage.setItem("movieData", JSON.stringify(movie_content))
@@ -348,7 +348,7 @@ function display_hotData3(data) {
 
 
 
-let data4 = fetch(`http://www.omdbapi.com/?apikey=${key}&s=${title[Math.floor(Math.random()*title.length)]}`)
+let data4 = fetch(`https://www.omdbapi.com/?apikey=${key}&s=${title[Math.floor(Math.random()*title.length)]}`)
     .then((res) => res.json())
     .then(data => display_hotData4(data));
 
@@ -430,7 +430,7 @@ function display_hotData4(data) {
                     show_watchlist()
                     myfunction()
                 } else {
-                    // icon.src = "https://www.hotstar.com/assets/1fd3813027f5538464413fb8b08d9dbb.svg"
+                    // icon.src = "httpss://www.hotstar.com/assets/1fd3813027f5538464413fb8b08d9dbb.svg"
                     let movie_content = JSON.parse(localStorage.getItem("movieData"))
                     movie_content = movie_content.filter(el => el.Title != indivData.Title)
                     localStorage.setItem("movieData", JSON.stringify(movie_content))
