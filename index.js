@@ -6,6 +6,16 @@ var div2 =document.createElement('section')
 div.style.position='relative'
 div1.style.position='relative'
 div2.style.position='relative'
+div.addEventListener("click",function(){
+    window.location.href="./amit/Language/channel.html"
+})
+div1.addEventListener("click",function(){
+    window.location.href="./amit/Language/language.html"
+})
+div2.addEventListener("click",function(){
+    window.location.href="./amit/Language/genres.html"
+})
+
 
 menu.addEventListener("mouseleave",function(){
     div.innerHTML=""
@@ -111,6 +121,8 @@ var input_div=document.getElementById("input_div")
 function stretch_input(){
 input_div.style.width="20%"
 input_div.style.marginLeft="120px"
+input_div.style.transition="0.5s"
+
 }
 input_div.addEventListener("click",stretch_input)
 

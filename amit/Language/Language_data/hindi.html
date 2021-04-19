@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/amit/Language/Language_data/hindi.css">
+</head>
+<body style="background-color: rgb(19, 26, 39);">
+
+
+
+
+
+
+  <div style="position: fixed; z-index: 10;" id="navbar">
+    <div id="menuicon">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div>
+        <img id="logo" src="https://campaigns.hotstar.com/test-directory/disney-hotstar-logo.png">
+    </div>
+    <div>
+        <h3>TV</h3>
+    </div>
+    <div>
+        <h3>Movies</h3>
+    </div>
+    <div>
+        <h3>Sports</h3>
+    </div>
+    <div id="news">
+        <h3>News</h3>
+    </div>
+    <div>
+        <h3>Premium</h3>
+    </div>
+    <div>
+        <h3>Disney+</h3>
+        <p style="color: rgb(111, 111, 236); font-size: 10px; line-height: 0px; text-align: center;">NEW</p>
+    </div>
+    <div>
+        <img src="kids.PNG" style="width: 100%; height: 20px;">
+    </div>
+    <div id="input_div">
+        <input type="text" placeholder="Search" id="input">
+        <div style="float: right;">
+            <img src="https://lh3.googleusercontent.com/proxy/asWjGXSQAEdAW_tEIAhwKCIJdnEmbG50sfMF996pfkk5hNzr6JItszduaectEVibHT9euHG4CI3iVsohwLj81JTU8tkM9TcCSPg-chpQraKr4Lvr88tP"
+                style="width: 30px;height: 10px; margin-top: 10px;">
+        </div>
+        <div id="search_data">
+            <!-- ----------search functionality data append here--------- -->
+
+        </div>
+
+    </div>
+    <div>
+        <h5 style="color: white; line-height: 8px; text-align: center; margin-top: 9px;">SUBSCRIBE</h5>
+    </div>
+    <div id="login">
+        <h6>LOGIN</h6>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <div id="hindi_display">
+
+    </div>
+
+      <!-- footer -->
+      <div class="footersHotstar">
+        <div class="hotstarFooter">
+            <div class="hotstarFooterLink">
+                <ul class="starFooter">
+                    <li><a href="About"> About Disney+Hotstar</a> </li>
+                    <li><a href="Term"> Terms of Use</a></li>
+                    <li><a href="Faq"> Faq</a> </li>
+                    <li><a href="Feedback"> Feedback </a> </li>
+                    <li><a href="careers"> Careers </a> </li>
+                </ul>
+                <p> @2021 STAR. Reserved HBO, Home box office and all related channel and programming logos are service
+                    marks of m and all<br> related programming visuals and elements are the property of , Home Box
+                    office,Inc. All rights reserved </p>
+            </div>
+            <div class="hotstarFooterLink">
+                <p> connect with us </p>
+                <div class="hotstarFooterLink">
+                    <img src="https://s3-symbol-logo.tradingview.com/facebook--600.png" alt="" />
+                    <img src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png" alt="">
+                </div>
+            </div>
+
+            <div class="hotstarFooterLink">
+
+                <p> Disney+hotstar </p>
+                
+                
+                <div class="hotstarFooterLink hotstarFooterLink2">
+
+                    <img src="https://img.etimg.com/thumb/msid-76745702,width-1200,height-900,imgsize-122324,overlay-etpanache/photo.jpg"
+                        alt="">
+                    <img src="https://images.news18.com/ibnlive/uploads/2020/10/1603625539_google_playstore_adwares.jpg"
+                        alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<script>
+    async function get_data() {
+    var channel_div = document.getElementById("hindi_display");
+    var url = "/amit/Language/Language_data/hindi.json";
+    var res1 = await (await fetch(url)).json();
+  
+    console.log(res1);
+  
+    var start = 0;
+    var end = 5;
+    for (var i = start; i <end; i++) {
+      var first_div = document.createElement("div");
+      first_div.setAttribute("id", "first_div");
+      var image_div = document.createElement("div");
+      image_div.setAttribute("class", "image_div");
+      image_div.innerHTML = `<img width="270px"; style="opacity:0.6" src="${res1[i].h}" alt="">`;
+      var para_div = document.createElement("div");
+      para_div.setAttribute('class',"centered")
+      para_div.innerHTML = `<p class="title">${res1[i].title}</p><p class="title">${res1[i].description}</p>`;
+      image_div.append(para_div)
+     
+      
+      first_div.append(image_div);
+      channel_div.append(first_div);
+      start = end;
+      end = end + 5;
+    }
+  }
+  get_data();
+  
+
+
+</script>
