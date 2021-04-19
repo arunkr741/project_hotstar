@@ -1,83 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            font-family: Arial, Helvetica, sans-serif;
-            
-        }
-        body{
-            background-color: rgb(12,17,27);
-        }
-        #cont{
-            height: 530px;
-            /* border: 1px solid red; */
-            margin-top: 70px;
-        }
-        #movie{
-            height: 480px;
-            /* border: 1px solid red; */
-            margin-left: 60px;
-            margin-right: 60px;
-            background-color: rgb(3,11,23);
-            display: flex;
-        }
-        /* #poster{
-            border: 2px solid rgb(122, 12, 233);
-            
-          margin-left: 37%; 
-           
-           background: url('https://www.hotstar.com/assets/516e89f89ecb834688f7928c91724e11.svg') no-repeat;
-    width: 49px;
-    margin: 0;
-            
-        } */
-        #poster>img{
-            width: 920px;
-            height: 480px;
-            
-        }
-        #content{
-         /* border: 2px solid rgb(122, 12, 233);  */
-         height: 480px;
-         width: 37%; 
-         float: left;
-        }
-        p{
-            color: red;
-        }
-    </style>
+    <link rel="stylesheet" href="https://vjs.zencdn.net/7.11.4/video-js.css">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://vjs.zencdn.net/7.11.4/video-js.css">
 </head>
+
 <body>
-    <div id="cont">
-        <div id="movie">
-            <div id="content">
-                <p>edfkefdwcw ergrrev cecf weyudwc ddg fffecdc cgecevdc ee efdvedeydedefgedef fgegdefe detddedegdede ee ed ef</p>
+    <!-- --------------------navbar start--------------------------- -->
+    <div style="position: fixed; z-index: 10;" id="navbar">
+        <div id="menuicon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <img id="logo" src="https://campaigns.hotstar.com/test-directory/disney-hotstar-logo.png">
+        </div>
+        <div>
+            <h3>TV</h3>
+        </div>
+        <div>
+            <h3>Movies</h3>
+        </div>
+        <div>
+            <h3>Sports</h3>
+        </div>
+        <div id="news">
+            <h3>News</h3>
+        </div>
+        <div>
+            <h3>Premium</h3>
+        </div>
+        <div>
+            <h3>Disney+</h3>
+            <p style="color: rgb(111, 111, 236); font-size: 10px; line-height: 0px; text-align: center;">NEW</p>
+        </div>
+        <div>
+            <img src="kids.PNG" style="width: 100%; height: 20px;">
+        </div>
+        <div id="input_div">
+            <input type="text" placeholder="Search" id="input">
+            <div style="float: right;">
+                <img src="https://lh3.googleusercontent.com/proxy/asWjGXSQAEdAW_tEIAhwKCIJdnEmbG50sfMF996pfkk5hNzr6JItszduaectEVibHT9euHG4CI3iVsohwLj81JTU8tkM9TcCSPg-chpQraKr4Lvr88tP"
+                    style="width: 30px;height: 10px; margin-top: 10px;">
             </div>
-            <div id="poster">
-                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/187/940187-h" alt="arun">
-                
+            <div id="search_data">
+                <!-- ----------search functionality data append here--------- -->
+
             </div>
-          
-            
+
+        </div>
+        <div>
+            <h5 style="color: white; line-height: 8px; text-align: center; margin-top: 9px;">SUBSCRIBE</h5>
+        </div>
+        <div id="login">
+            <h6>LOGIN</h6>
         </div>
     </div>
-    <button onclick="param()">params</button>
-    <script>
-        function param(){
-            var url = new URL(window.location)
-   
-            var params = new URLSearchParams(url.search)
+    <!-- --------------------navbar end--------------------------- -->
+    <div style="height: 400px;" id="cont">
+
+        <div style="margin-top: -20px;" id="main_div">
+            <div class="text_box">
+                <video 
+                id="my-video"
+                class="video-js"
+                controls 
+                autoplay
+                preload="auto" 
+                width="1340" 
+                height="550" 
+               
+                poster="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg"
+                data-setup="{}"
+            >
+                <source src="video.mp4" type="video/mp4">
+               
+                <p class="vjs-no-js">
+                    To view this video
+                    <a href="http://videojs.com/html5-video-support" target="_blank">
+                        supports html5 video
+                    </a>
+                </p>
+            </video>
+                    
+                
+                           
+            </div>
+
+           
+        </div>
+
+
+
+    </div>
+
+    <div>
+        <img src="" alt="">
+    </div>
+
+
+    <div  class="middle_div">
+        <div id="trailer">
+            <h1 class="p_tag">Trailer &amp; Extras</h1>
+            <div>
+                <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg"
+                    alt="">
+            </div>
+
+        </div>
+        <h1 class="p_tag">More Like this</h1>
+        <div id="suggestions_display">
+
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/old_images/MOVIE/4503/1000034503/1000034503-h"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/old_images/MOVIE/4506/1000034506/1000034506-h"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/7416/957416-v"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/old_images/MOVIE/5771/1000065771/1000065771-h"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/old_images/MOVIE/9846/1000109846/1000109846-h"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/old_images/MOVIE/2229/1000152229/1000152229-h"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4739/14739-h"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/5461/245461-h"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/454/30454-h"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/533/290533-h"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/sources/r1/cms/prod/5450/305450-h"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/1322/441322-h"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/9438/529438-h"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4711/664711-h"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/2886/892886-h"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/6660/956660-h"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/6535/846535-h"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/9648/959648-h"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/3254/803254-h"
+                id="images">
+            <div class="text_class"></div><img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/8130/928130-h"
+                id="images">
+            <div class="text_class"></div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footersHotstar">
+        <div class="hotstarFooter">
+            <div class="hotstarFooterLink">
+                <ul class="starFooter">
+                    <li><a href="About"> About Disney+Hotstar</a> </li>
+                    <li><a href="Term"> Terms of Use</a></li>
+                    <li><a href="Faq"> Faq</a> </li>
+                    <li><a href="Feedback"> Feedback </a> </li>
+                    <li><a href="careers"> Careers </a> </li>
+                </ul>
+                <p> @2021 STAR. Reserved HBO, Home box office and all related channel and programming logos are service
+                    marks of m and all<br> related programming visuals and elements are the property of , Home Box
+                    office,Inc. All rights reserved </p>
+            </div>
+            <div class="hotstarFooterLink">
+                <p> connect with us </p>
+                <div class="hotstarFooterLink">
+                    <img src="https://s3-symbol-logo.tradingview.com/facebook--600.png" alt="">
+                    <img src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png" alt="">
+                </div>
+            </div>
+
+            <div class="hotstarFooterLink">
+
+                <p> Disney+hotstar </p>
+
+
+                <div class="hotstarFooterLink hotstarFooterLink2">
+
+                    <img src="https://img.etimg.com/thumb/msid-76745702,width-1200,height-900,imgsize-122324,overlay-etpanache/photo.jpg"
+                        alt="">
+                    <img src="https://images.news18.com/ibnlive/uploads/2020/10/1603625539_google_playstore_adwares.jpg"
+                        alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://vjs.zencdn.net/7.11.4/video.min.js">
+
         
-            var title = params.get("title")
-            var apikey = params.get("apikey")
-            console.log(title,apikey)
-        }
-        
+
     </script>
 </body>
+
 </html>

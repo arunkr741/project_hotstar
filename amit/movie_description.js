@@ -69,3 +69,8 @@ function add_to_watchlist(){
    count++
     console.log(content)
 }
+
+
+function watch_movie(){
+    window.location.href="../arun/movie_content.html"
+}

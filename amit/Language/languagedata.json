@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Hindi",
+    "p": "हिंदी",
+    "image": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/old_images/LANGUAGE/5710/5710/5710-h"
+  },
+
+  {
+    "title": "Bengali",
+    "p": "বাংলা",
+    "image": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/old_images/LANGUAGE/5708/5708/5708-h"
+  },
+  {
+    "title": "Telugu",
+    "p": "తెలుగు",
+    "image": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/old_images/LANGUAGE/5714/5714/5714-h"
+  },
+  {
+    "title": "Malayalam",
+    "p": "മലയാളം",
+    "image": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/old_images/LANGUAGE/5712/5712/5712-h"
+  },
+  {
+    "title": "Tamil",
+    "p": "தமிழ்",
+    "image": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/9021/549021-h"
+  },
+
+  {
+    "title": "Marathi",
+    "p": "மராத்தி",
+    "image": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/old_images/LANGUAGE/5715/5715/5715-h"
+  },
+
+  
+  {
+    "title": "English",
+      "p":"",
+    "image": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/old_images/LANGUAGE/5709/5709/5709-h"
+  },
+  {
+    "title": "Kannada",
+    "p": "ಕನ್ನಡ",
+    "image": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/old_images/LANGUAGE/5711/5711/5711-h"
+  }
+]
