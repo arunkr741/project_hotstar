@@ -8,7 +8,7 @@ We had to given time constrainet of 5 days to clone this website.
 
 <h1>Landing page</h1>
 <br/>
-<img src="amit/static/Screenshot (894).png" alt="">
+<a href="https://ibb.co/Wkb8xLs"><img src="https://i.ibb.co/LxLjk3v/Screenshot-894.png" alt="Screenshot-894" border="0"></a>
 #Team members:
 <br/>
 Amit kumar mehta
