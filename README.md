@@ -5,6 +5,10 @@ Hotstar (also known as Disney+ Hotstar) is an Indian brand of subscription video
 
 We had to given time constrainet of 5 days to clone this website.
 <img src="https://secure-media.hotstar.com/web-assets/prod/images/Disney+Hotstar.jpg" alt="">
+
+<h1>Landing page</h1>
+<br/>
+<img src="amit/static/Screenshot (894).png" alt="">
 #Team members:
 <br/>
 Amit kumar mehta
